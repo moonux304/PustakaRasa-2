@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&family=Titan+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    /* Mengaktifkan efek scrolling yang lebih halus */
+}
+
+body{
+    background: #001F3F;
+}
+
+.nav-link{
+    font-weight: 300 !important;
+}
+.navbar-nav .nav-link {
+    color: #F5C45E !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+.btn.btn-primary{
+    border-radius: 50px !important;
+    border-color: #F5C45E;
+    background-color: #F5C45E;
+    color: black !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 350 !important;
+}
+.btn.btn-outline-primary{
+    border-radius: 50px !important;
+    border-color: #F5C45E !important;
+    color:#F5C45E !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 350 !important;
+}
+.col-sm{
+    margin-top: 10px !important;
+}
+.hero-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container {
+    padding-left: 0;
+    padding-right: 0 !important;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.nama{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    color: #F5C45E !important;
+    font-size: 80px !important;
+}
+.tagline{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    color: white !important;
+    font-size: 40px !important;
+}
+.filosofi{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important;
+    color: white !important;
+    font-size: 17px !important;
+}
+.col img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.image-kanan{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.about{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    color: white !important;
+    font-size: 50px !important;
+}
