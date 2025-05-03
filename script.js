@@ -40,23 +40,26 @@ function validateForm() {
 }
 
 // seacrh
-const searchInput = document.getElementById("searchInput");
-const books = document.querySelectorAll(".book");
-const form = document.querySelector("form");
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("searchInput");
+  const cards = document.querySelectorAll(".card");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault(); // supaya gak reload halaman
+  input.addEventListener("input", function () {
+    const query = input.value.toLowerCase();
 
-  const keyword = searchInput.value.toLowerCase();
+    cards.forEach(card => {
+      const title = card.querySelector(".card-title").textContent.toLowerCase();
+      if (title.includes(query)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
 
-  books.forEach((book) => {
-    const title = book.querySelector(".card-title").textContent.toLowerCase();
-
-    if (title.includes(keyword)) {
-      book.style.display = "block";
-    } else {
-      book.style.display = "none";
-    }
+  // Optional: biar tombol "cari" gak reload halaman
+  document.querySelector("form[role='search']").addEventListener("submit", function (e) {
+    e.preventDefault();
   });
 });
 
@@ -74,4 +77,41 @@ window.onscroll = function () {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// bookmark
+document.addEventListener('DOMContentLoaded', function() {
+  const bookmarkIcons = document.querySelectorAll('.bookmark-icon');
+  
+  // Mengambil data bookmark yang sudah disimpan sebelumnya (dari localStorage)
+  let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+
+  // Menandai tombol bookmark yang sudah dibookmark sebelumnya
+  bookmarkIcons.forEach(icon => {
+      const novelId = icon.getAttribute('data-id');
+      
+      if (bookmarks.includes(novelId)) {
+          icon.textContent = 'bookmark_added';  // Ubah ikon menjadi yang sudah dibookmark
+      }
+  });
+
+  // Menambahkan event listener untuk setiap tombol bookmark
+  bookmarkIcons.forEach(icon => {
+      icon.addEventListener('click', function() {
+          const novelId = icon.getAttribute('data-id');
+          
+          if (bookmarks.includes(novelId)) {
+              // Jika sudah dibookmark, hapus dari daftar bookmark
+              bookmarks = bookmarks.filter(id => id !== novelId);
+              icon.textContent = 'bookmark';  // Ubah ikon kembali ke bookmark kosong
+          } else {
+              // Jika belum dibookmark, tambahkan ke daftar bookmark
+              bookmarks.push(novelId);
+              icon.textContent = 'bookmark_added';  // Ubah ikon menjadi yang sudah dibookmark
+          }
+
+          // Simpan daftar bookmark terbaru ke localStorage
+          localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+      });
+  });
+});
 
