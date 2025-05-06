@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- pemanggilan css -->
     <link rel="stylesheet" href="style.css">
@@ -18,209 +19,320 @@
 
     <!-- link untuk icon -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    
-    
+
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>PustakaRasa</title>
+    <title>Romance</title>
     <link rel="website icon" type="svg" href="images/elemen/Logo.svg">
   </head>
-  <body style="background-color: #EAD8B1 !important;">
-    <header class=""  style="background-color: white !important;">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <nav class="navbar">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                  <img src="images/elemen/Logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                  PustakaRasa
-                </a>
-              </div>
-            </nav>
-          </div>
-          <div class="col-5">
-            <nav class="navbar navbar-expand">
-              <div class="container-fluid">
-                <form class="d-flex" role="search">
-                  <input id="searchInput" class="form-control me-2" type="search" placeholder="Laut bercerita" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">cari</button>
-                </form>
-              </div>
-            </nav>
-          </div>
-          <div class="col">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Genre</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                  <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                  <li><a class="dropdown-item" href="#">Thriller</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
+  <body class="bg-light" style="">
+    <header class="fixed-top d-flex" style="background-color: white;">
+      <!-- logo -->
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/elemen/Logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            PustakaRasa
+          </a>
         </div>
-      </div>
+      </nav>
+
+      <!-- navigasi -->
+      <ul class="nav nav-pills ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#about us">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Genre</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+            <li><a class="dropdown-item" href="fiksi.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="thriller.html">Thriller</a></li>
+            <li><a class="dropdown-item" href="historical.html">Historical Fiction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#review">Review</a>
+        </li>
+        <li class="p-1">
+          <span class="material-symbols-outlined cursor-pointer" id="login">
+            person
+            </span>
+        </li>
+      </ul>
     </header>
 
     <!-- section1 -->
     <section>
-      <div class="container text-center">
-        <div class="row">
-          <div data-aos="zoom-in-down" data-aos-duration="1000" class="col">
-            <h1 class="fiksi1">Bayang, Makna, Laras</h1>
-            <p class="fiksi2">Imajinasi yang membayang, rasa yang bermakna, dan 
-              kisah yang mengalun dalam laras cerita.</p>
-          </div>
-          <div data-aos="fade-up" data-aos-duration="1000" class="col fiksi">
-            <img src="images/elemen/Group 30.svg" alt="">
+        <div class="container text-center romance mt-5">
+           <img src="images/elemen/Frame 19f.png" alt="">
+        </div>
+
+        <div class="bookslider-container">
+          <div class="bookslider-track">
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalCatatanpembunuhanSangNovelis">
+              <img src="images/fiksi/Novel Catatan Pembunuhan Sang Noveli.jpeg" alt="Book Cover">
+              <div class="bookslider-author">Keigo Higashino</div>
+              <div class="bookslider-title">Catatan pembunuhan Sang Novelis</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalKeajaibanTokoKelontongNamiya">
+              <img src="images/fiksi/toko kelontong namiya_14_11zon.jpeg" alt="Book Cover">
+              <div class="bookslider-author">Keigo Higashino</div>
+              <div class="bookslider-title">Keajaiban Toko Kelontong Namiya</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalLePetitPrince">
+              <img src="images/fiksi/pangeran cilik le petit prince_10_11zon.jpeg" alt="Book Cover">
+              <div class="bookslider-author">Antoine de Saint-Exupéry</div>
+              <div class="bookslider-title">Le Petit Prince</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalPerangOpium">
+              <img src="images/fiksi/perang opiumj.jpg" alt="Book Cover">
+              <div class="bookslider-author">Fadiyah Alaidrus</div>
+              <div class="bookslider-title">Perang Opium (The Poppy War)</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalAlaia">
+              <img src="images/fiksi/alaia.jpg" alt="Book Cover">
+              <div class="bookslider-author">Raden Chedid</div>
+              <div class="bookslider-title">Alaia</div>
+            </div>
+            <!-- Duplicate for infinite effect -->
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalMelangkah">
+              <img src="images/fiksi/melangkah_11zon.png" alt="Book Cover">
+              <div class="bookslider-author">J.S Khairen</div>
+              <div class="bookslider-title">Melangkah</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalCatatanpembunuhanSangNovelis">
+              <img src="images/fiksi/Novel Catatan Pembunuhan Sang Noveli.jpeg" alt="Book Cover">
+              <div class="bookslider-author">Keigo Higashino</div>
+              <div class="bookslider-title">Catatan pembunuhan Sang Novelis</div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- section2 -->
-    <section>
-      <div class="container text-center" style="margin-top: 80px; font-family: 'Poppins';">
-        <div data-aos="fade-up" data-aos-duration="1000" class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-          <div class="col">
-            <!-- Card Component -->
-            <!--card baris 1  -->
-            <div class="book card" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/2191 hari di bandung_1_11zon.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Hanasya</p>
-                <h5 class="card-title">2191 Hari di Bandung</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel1">bookmark</span>
-                </div>
+        <!-- Modal le petit prince -->
+        <div class="modal fade" id="modalLePetitPrince" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Le Petit Prince</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Antoine de Saint-Exupéry dalam novel ini mengisahkan tentang pertemuan tokoh utamanya yang 
+                merupakan seorang pilot dengan seorang pangeran cilik yang berasal dari luar angkasa. 
+                Mereka bertemu di tengah-tengah Gurun Sahara. Dalam percakapan yang dilakukan keduanya, 
+                Antoine menyampaikan pandangannya mengenai kesalahpahaman yang kerap terjadi di masyarakat. 
+                Ia juga membahas tentang kebenaran sederhana yang sering dilupakan oleh seseorang, seiring mereka bertambah dewasa.
+                Le Petit Prince telah diadaptasi ke dalam film animasi di tahun 2015. Cerita bermula ketika 
+                salah satu tokoh masih kecil. Suatu hari, ia menggambar ular boa yang menyantap seekor gajah.
+                <br>
+                <br>
+                Namun, saat ia memperlihatkan gambar itu ke orang dewasa, mereka malah menyuruhnya mulai belajar hal-hal lain, 
+                seperti aritmetika, geometri, geografi, tata bahasa, dan sebagainya. 
+                Mereka juga menyuruhnya untuk berhenti menggambar.
+                <br>
+                <br>
+                Pada akhirnya, anak ini berhenti menggambar dan tumbuh besar menjadi seorang pilot. Sebagai seorang pilot, 
+                ia kerap membawa gambar yang dibuatnya. Terkadang juga ia membahas gambar itu 
+                bersama rekan-rekannya. Namun, tak ada satu orang dewasa pun yang memahami gambar yang dibuatnya.
               </div>
             </div>
-            <!-- card baris 2 -->
-            <div class="card mt-5" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/arah pulang untuk bela.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Neylis</p>
-                <h5 class="card-title">Arah Pulang Untuk Bela</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel2">bookmark</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="card" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/berhenti dikamu.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Gia Pratama</p>
-                <h5 class="card-title">Berhenti Dikamu</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel3">bookmark</span>
-                </div>
-              </div>
-            </div>
-  
-            <!-- card baris 2 -->
-            <div class="card mt-5" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/dikta dan hukum.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Dhia'an Farah</p>
-                <h5 class="card-title">Dikta dan Hukum</h>
-                  <div class="text-end mt-2">
-                    <span class="material-symbols-outlined bookmark-icon" data-id="novel4">bookmark</span>
-                  </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/five feet apart.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Rachael Lipponcott</p>
-                <h5 class="card-title">Five Feet Apart</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel5">bookmark</span>
-                </div>
-              </div>
-            </div>
-  
-            <!-- card baris 2 -->
-            <div class="card mt-5" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/hello cello.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Nadia Ristivani</p>
-                <h5 class="card-title">Hello Cello</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel6">bookmark</span>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/Hilmy Milan.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Nadia Ristivani</p>
-                <h5 class="card-title">Hilmy Milan</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel7">bookmark</span>
-                </div>
-              </div>
-            </div>
-  
-            <!-- card baris 2 -->
-            <div class="card mt-5" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/kado terbaik.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">J.S khairen</p>
-                <h5 class="card-title">Kado Terbaik</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel8">bookmark</span>
-                </div>
-              </div>
-            </div>
-          </div>
           </div>
         </div>
-      </div>
+
+        <!-- Modal keajaiban toko kelontong -->
+        <div class="modal fade" id="modalKeajaibanTokoKelontongNamiya" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Keajaiban Toko Kelontong Namiya</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Ketika tiga pemuda berandal bersembunyi di toko kelontong tak berpenghuni setelah melakukan pencurian, 
+                sepucuk surat misterius mendadak diselipkan ke dalam toko melalui lubang surat.
+                <br>
+                <br>
+                Surat yang berisi permintaan saran. Sungguh aneh.
+                <br>
+                <br>
+                Namun, surat aneh itu ternyata membawa mereka dalam petualangan melintasi waktu, menggantikan peran kakek 
+                pemilik toko kelontong yang menghabiskan tahun-tahun terakhirnya memberikan 
+                nasihat tulus kepada orang-orang yang meminta bantuan.
+                <br>
+                <br>
+                Hanya untuk satu malam.
+                <br>
+                Dan saat fajar menjelang, hidup ketiga sahabat itu tidak akan pernah sama lagi.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal pembunuhan sang novelis -->
+        <div class="modal fade" id="modalCatatanpembunuhanSangNovelis" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Catatan Pembunuhan Sang Novelis</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Novelis laris Hidaka Kunihiko ditemukan tewas di rumahnya pada malam sebelum ia meninggalkan Jepang 
+                untuk pindah ke Kanada. Tubuhnya ditemukan di ruang kerjanya yang terkunci di 
+                rumahnya yang juga terkunci oleh istri dan sahabatnya. Keduanya punya alibi kuat. Mungkin.
+                <br>
+                <br>
+                Detektif Kaga Kyoichiro yang menyelidiki kasus pembunuhan tersebut menemukan bahwa hubungan Hidaka dengan 
+                sang sahabat, Nonoguchi Osamu, tidak seperti yang diceritakan oleh Nonoguchi. 
+                Tapi pertanyaan yang paling mengusik Kaga bukanlah siapa atau bagaimana, 
+                melainkan kenapa. Dari situlah sang detektif dan sang pembunuh bertarung 
+                membeberkan kebenaran tentang masa lalu dan masa kini versi masing-masing. 
+                Dan jika Kaga gagal menguak motif sang pembunuh yang sebenarnya, kebenaran 
+                takkan terungkap seutuhnya.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Perang Opium (The Poppy War) -->
+        <div class="modal fade" id="modalPerangOpium" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Perang Opium (The Poppy War)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Semua orang terkejut ketika Rin berhasil masuk Sinegard, akademi militer elite di Kekaisaran Nikan. 
+                Tetapi, kejutan tidaklah selalu menyenangkan. Karena dianggap anak kampung miskin, 
+                Rin jadi bulan-bulanan. Apalagi karena ia perempuan. Dalam keadaan putus asa, Rin mendapati dirinya 
+                ternyata memiliki kekuatan supernatural yang mematikan —syamanisme. Di bawah bimbingan guru yang dianggap 
+                gila, Rin jadi tahu bahwa dewa-dewa yang selama ini dikira mati, ternyata masih hidup. Kekaisaran 
+                Nikan hidup damai, namun bekas penjajahnya, Federasi Mugen, terus mengintai 
+                Kekuatan syamanisme Rin mungkin satu-satunya yang bisa menyelamatkan rakyat, 
+                tapi semakin ia mengenal sang dewa Phoenix yang memilihnya, dewa penuh kemurkaan 
+                dan dendam, semakin ia khawatir. Memenangkan perang mungkin harus dibayarnya 
+                mahal dengan sifat kemanusiaan. Dan mungkin semuanya sudah terlambat.
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal melangkah -->
+        <div class="modal fade" id="modalMelangkah" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Melangkah</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Listrik padam di seluruh Jawa dan Bali secara misterius. Ancaman 
+                nyata kekuatan baru yang hendak menaklukkan Nusantara.
+                <br>
+                <br>
+                Saat yang sama, empat sahabat mendarat di Sumba, hanya untuk 
+                mendapati nasib ratusan juta manusia ada di tangan mereka! Empat 
+                mahasiswa ekonomi ini, harus bertarung melawan pasukan berkuda yang 
+                bisa melontarkan listrik! Semua dipersulit oleh seorang buronan tingkat
+                tinggi bertopeng pahlawan yang punya rencana mengerikan.
+                <br>
+                <br>
+                Ternyata pesan arwah nenek moyang itu benar-benar terwujud. “Akan datang 
+                kegelapan yang berderap, bersama ribuan kuda raksasa di kala malam. 
+                Mereka bangun setelah sekian lama, untuk menghancurkan Nusantara. 
+                Seorang lelaki dan seorang perempuan ditakdirkan membaurkan air di 
+                lautan dan api di pegunungan. Menyatukan tanah yang menghujam, dan 
+                udara yang terhampar.”
+                <br>
+                <br>
+                Kisah tentang persahabatan, tentang jurang ego anak dan orangtua, tentang menyeimbangkan 
+                logika dan perasaan. Juga tentang melangkah menuju masa depan. Bahwa, 
+                apa pun yang menjadi luka masa lalu, biarlah mengering bersama waktu.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal alaia-->
+        <div class="modal fade" id="modalAlaia" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Alaia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Dia masih hidup <br>
+                Keturuan sang Raja Siren dan Ratu Mermaid
+                <br>
+                <br>
+                Menjalin hubungan terlarang <br>Memecahkan kutukan <br>Menentang permainan alam yang bersebunyi di jantung laut
+                <br>
+                <br>
+                Siapa yang akan bertahan hingga akhir?
+                <br>
+                <br>
+                ALAIA <br>Putri yang mulia dari lautan
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
+    
   <!-- footer -->
-  <div class="container-fluid" >
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+  <div class="container-fluid m-0" style="background-color: #9B8BE3;">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+      <div class="col mb-3"> 
+        <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
+          <img src="images/elemen/Logo.svg" alt="Logo" width="40" height="40">
         </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+        <p class="text-body-secondary">&copy; 2024</p>
       </div>
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-      </ul>
+  
+      <div class="col mb-3">
+  
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
     </footer>
   </div>
 
@@ -228,7 +340,9 @@
   <button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-primary">
     ↑
   </button>
-    
+
+    <!-- Optional JavaScript -->
+
     <!-- Optional JavaScript -->
     <script src="script.js"></script>
 
@@ -236,14 +350,9 @@
     <!-- Bootstrap Bundle JS (sudah termasuk Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Bootstrap JS -->
-    <!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-  </body>
-</html>
   </body>
 </html>

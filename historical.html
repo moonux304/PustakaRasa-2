@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- pemanggilan css -->
+    <link rel="stylesheet" href="style.css">
+  
+    <!-- link untuk fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- link untuk icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Romance</title>
+    <link rel="website icon" type="svg" href="images/elemen/Logo.svg">
+  </head>
+  <body class="bg-light">
+    <header class="fixed-top d-flex" style="background-color: white;">
+      <!-- logo -->
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/elemen/Logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            PustakaRasa
+          </a>
+        </div>
+      </nav>
+
+      <!-- navigasi -->
+      <ul class="nav nav-pills ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#about us">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Genre</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+            <li><a class="dropdown-item" href="fiksi.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="thriller.html">Thriller</a></li>
+            <li><a class="dropdown-item" href="historical.html">Historical Fiction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#review">Review</a>
+        </li>
+        <li class="p-1">
+          <span class="material-symbols-outlined cursor-pointer" id="login">
+            person
+            </span>
+        </li>
+      </ul>
+    </header>
+
+    <!-- section1 -->
+    <section>
+        <div class="container text-center romance mt-5">
+           <img src="images/elemen/Frame 19f.png" alt="">
+        </div>
+
+        <div class="bookslider-container">
+          <div class="bookslider-track">
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalcantikituluka">
+              <img src="images/historical fiction/cantik itu luka.jpg" alt="Book Cover">
+              <div class="bookslider-author">Eka Kurniawan</div>
+              <div class="bookslider-title">Cantik Itu Luka</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalamba">
+              <img src="images/historical fiction/amba.jpg" alt="Book Cover">
+              <div class="bookslider-author">Laksmi Pamuntjak</div>
+              <div class="bookslider-title">Amba</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modallautbercerita">
+              <img src="images/historical fiction/laut bercerita.jpg" alt="Book Cover">
+              <div class="bookslider-author">Leila S. Chudori</div>
+              <div class="bookslider-title">Laut Bercerita</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalgadiskretek">
+              <img src="images/historical fiction/gadis kretek.jpg" alt="Book Cover">
+              <div class="bookslider-author">Ratih Kumala</div>
+              <div class="bookslider-title">Gadis Kretek</div>
+            </div>
+            <!-- Duplicate for infinite effect -->
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalpulang">
+              <img src="images/historical fiction/pulang.jpg" alt="Book Cover">
+              <div class="bookslider-author">Leila S. Chudori</div>
+              <div class="bookslider-title">Pulang</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalnamakualam">
+              <img src="images/historical fiction/namaku alam.jpg" alt="Book Cover">
+              <div class="bookslider-author">Leila S. Chudori</div>
+              <div class="bookslider-title">Namaku Alam</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modaldukuhparuk">
+                <img src="images/historical fiction/dongeng dukuh paruk.jpg" alt="Book Cover">
+                <div class="bookslider-author">Dhia'an arah</div>
+                <div class="bookslider-title">Ronggeng Dukuh Paruk</div>
+            </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalcantikituluka">
+              <img src="images/historical fiction/cantik itu luka.jpg" alt="Book Cover">
+              <div class="bookslider-author">Eka Kurniawan</div>
+              <div class="bookslider-title">Cantik Itu Luka</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal cantik itu luka -->
+        <div class="modal fade" id="modalcantikituluka" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Cantik Itu Luka</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Hidup di era kolonialisme bagi para wanita dianggap sudah setara seperti hidup di neraka. Terutama bagi para wanita berparas cantik yang menjadi incaran tentara 
+                penjajah untuk melampiaskan hasrat mereka. Itu lah takdir miris yang dilalui Dewi Ayu, demi menyelamatkan hidupnya sendiri Dewi harus menerima paksaan menjadi 
+                pelacur bagi tentara Belanda dan Jepang selama masa kedudukan mereka di Indonesia.
+                <br>
+                <br>
+                Kecantikan Dewi tidak hanya terkenal dikalangan para penjajah saja, seluruh desa pun mengakui pesona parasnya itu. 
+                Namun bagi Dewi, kecantikannya ini seperti kutukan, kutukan yang membuat hidupnya sengsara, dan kutukan yang 
+                mengancam takdir keempat anak perempuannya yang ikut mewarisi genetik cantiknya.
+                <br>
+                <br>
+                Tapi tidak dengan satu anak terakhir Dewi, si Cantik, yang lahir dengan kondisi buruk rupa. Tak lama setelah mendatangkan Cantik 
+                ke dunia, Dewi harus berpulang. Tapi di satu sore, dua puluh satu tahun kemudian, Dewi kembali, bangkit dari kuburannya. 
+                Kebangkitannya menguak kutukan dan tragedi keluarga.
+                <br>
+                <br>
+                Bagaimana takdir yang akan menghampiri si Cantik? Apa yang membuat Dewi harus kembali ke dunia bak neraka ini? 
+                Ungkap rahasia dibalik misteri kisah masa kolonial dalam novel Cantik Itu Luka karya Eka Kurniawan.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal cantik itu luka -->
+        <div class="modal fade" id="modalamba" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Amba</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Amba merupakan novel yang mengisahkan kehidupan Amba yang saat itu berusia 18 tahun dan memiliki keinginan untuk mengejar 
+                pendidikan ke jenjang yang lebih tinggi. Keinginannya itu bertolak belakang dengan kekhawatiran kedua orang tuanya 
+                karena Amba tidak kunjung menikah. Sudarminto, ayah Amba, bertemu dengan Salwa, dosen muda Universitas Gadjah Mada, dan 
+                berniat menjodohkan Salwa dengan Amba namun Amba memiliki persyaratan untuk menyelesaikan perkuliahannya terlebih dahulu 
+                sebelum perjodohan dilakukan. Di tahun kedua studi Amba, Salwa dipindah tugas ke Universitas Airlangga, Surabaya. 
+                Amba yang kala itu diterima bekerja sebagai penerjemah di Rumah Sakit Sono Walujo pun bertemu dengan Bhisma, dokter 
+                lulusan Jerman Timur, dan akhirnya Amba memadu kasih dengan Bhisma sampai ia mengandung. Tahun 1971, Bhisma diasingkan 
+                ke Pulau Buru dan membuat Amba kebingungan lalu memutuskan untuk pergi ke Jakarta. Lalu, bagaimana nasib kehidupan Amba 
+                dan anak yang dikandungnya itu?
+                <br>
+                <br>
+                Tahun 2006 Amba pergi ke Pulau Buru. Ia mencari seorang yang dikasihinya, yang memberinya seorang anak di luar nikah. 
+                Laki-laki itu Bhisma, dokter lulusan Leipzig, Jerman Timur, yang hilang karena ditangkap pemerintah Orde Baru dan 
+                dibuang ke Pulau Buru. Ketika kamp tahanan politik itu dibubarkan dan para tapol dipulangkan, 
+                Bhisma tetap tak kembali. Novel berlatar sejarah ini mengisahkan cinta dan hidup Amba, anak seorang 
+                guru di sebuah kota kecil Jawa Tengah. "Aku dibesarkan di Kadipura. Aku tumbuh dalam keluarga pembaca kitab-kitab tua." 
+                Tapi ia meninggalkan kotanya. Di Kediri ia bertemu Bhisma. Percintaan mereka terputus dengan tiba-tiba di sekitar Peristiwa 
+                G30S di Yogyakarta. Dalam sebuah serbuan, Bhisma hilang selama-lamanya. Baru di Pulau Buru, Amba tahu kenapa Bhisma tak kembali.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal cantik itu luka -->
+        <div class="modal fade" id="modallautbercerita" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Laut Bercerita</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Buku ini terdiri atas dua bagian. Bagian pertama mengambil sudut pandang seorang mahasiswa aktivis bernama Laut, 
+                menceritakan bagaimana Laut dan kawan-kawannya menyusun rencana, berpindah-pindah dalam pelarian, 
+                hingga tertangkap oleh pasukan rahasia. Sedangkan bagian kedua dikisahkan oleh Asmara, adik Laut. 
+                Bagian kedua mewakili perasaan keluarga korban penghilangan paksa, bagaimana pencarian mereka terhadap kerabat mereka yang tak pernah kembali.
+                <br>
+                <br>
+                Buku ini ditulis sebagai bentuk tribute bagi para aktivis yang diculik, 
+                yang kembali, dan yang tak kembali dan keluarga yang terus menerus sampai 
+                sekarang mencari-cari jawaban.
+                <br>
+                <br>
+                Novel ini merupakan perwujudan dalam bentuk fiksi bahwa kita sebagai bangsa Indonesia tidak boleh melupakan sejarah yang telah membentuk 
+                sekaligus menjadi tumpuan bangsa Ini. Novel ini juga mengajak pembaca menguak misteri-misteri bangsa ini 
+                yang mana tidak diajarkan di sekolah. Walaupun novel ini adalah fiksi, laut bercerita menunjukkan kepada 
+                pembaca bahwa negeri ini pernah memasuki masa pemerintahan yang kelam.
+                <br>
+                <br>
+                Laut Bercerita, novel terbaru Leila S. Chudori, bertutur tentang kisah keluarga yang kehilangan, sekumpulan sahabat yang 
+                merasakan kekosongan di dada, sekelompok orang yang gemar menyiksa dan lancar berkhianat,
+                sejumlah keluarga yang mencari kejelasan makam anaknya, dan tentang cinta yang tak akan luntur.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal cantik itu luka -->
+        <div class="modal fade" id="modalpulang" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Pulang</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Paris, Mei 1968
+                Ketika gerakan mahasiswa berkecamuk di Paris, Dimas Suryo, seorang eksil politik Indonesia, bertemu Vivienne Deveraux, 
+                mahasiswa yang ikut demonstrasi melawan pemerintahan Prancis. Pada saat yang sama, Dimas menerima 
+                kabar dari Jakarta; Hananto Prawiro, sahabatnya, ditangkap tentara dan dinyatakan tewas.
+                <br>
+                <br>
+                Di tengah kesibukan mengelola Restoran Tanah Air di Paris, Dimas bersama tiga kawannya-Nugroho, Tjai, dan Risjaf—terus-menerus 
+                dikejar rasa bersalah karena kawan-kawannya di Indonesia dikejar, ditembak, atau 
+                menghilang begitu saja dalam perburuan peristiwa 30 September. Apalagi dia tak bisa melupakan Surti 
+                Anandari—isteri Hananto—yang bersama ketiga anaknya berbulan-bulan diinterogasi tentara.
+                <br>
+                <br>
+                Jakarta, Mei 1998. <br>
+                Lintang Utara, puteri Dimas dari perkawinan dengan Vivienne Deveraux, akhirnya berhasil memperoleh 
+                visa masuk Indonesia untuk merekam pengalaman keluarga korban tragedi 30 September sebagai tugas 
+                akhir kuliahnya. Apa yang terkuak oleh Lintang bukan sekedar masa lalu ayahnya dengan Surti Anandari, 
+                tetapi juga bagaimana sejarah paling berdarah di negerinya mempunyai kaitan dengan Ayah dan kawan-kawan ayahnya. 
+                Bersama Sedara Alam, putera Hananto, Lintang menjadi saksi mata apa yang kemudian menjadi kerusuhan terbesar dalam sejarah 
+                Indonesia: kerusuhan Mei 1998 dan jatuhnya Presiden Indonesia yang sudah berkuasa selama 32 tahun.
+                <br>
+                <br>
+                Pulang adalah sebuah drama keluarga, persahabatan, cinta, dan pengkhianatan 
+                berlatar belakang tiga peristiwa bersejarah: Indonesia 30 September 1965, 
+                Prancis Mei 1968, dan Indonesia Mei 1998.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal cantik itu luka -->
+        <div class="modal fade" id="modalnamakualam" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Namaku Alam</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Inilah yang kubayangkan detik-detik terakhir Bapak: 18 Mei 1970. Hari gelap. Langit berwarna 
+                hitam dengan garis ungu. Bulan bersembunyi di balik ranting pohon randu. Sekumpulan burung nasar 
+                bertengger di pagar kawat. Mereka mencium aroma manusia yang nyaris jadi mayat bercampur bau mesiu. 
+                Terdengar lolongan anjing berkepanjangan. Empat orang berbaris rapi, masing-masing berdiri dengan
+                senapan yang diarahkan kepada Bapak. Hanya satu senapan berisi peluru mematikan. Selebihnya, peluru karet. 
+                Tak satu pun di antara keempat lelaki itu tahu siapa yang kelak menghentikan hidup Bapak. Pada usianya yang 
+                ke-33 tahun, Segara Alam menjenguk kembali masa kecilnya hingga dewasa. Semua peristiwa tertanam dengan kuat. 
+                Karena memiliki photographic memory, Alam ingat pertama kali dia ditodong senapan oleh seorang lelaki dewasa 
+                ketika masih berusia tiga tahun; pertama kali sepupunya mencercanya sebagai anak ‘pengkhianat negara’; pertama kali 
+                Alam berkelahi dengan seorang anak pengusaha besar yang menguasai sekolah; dan pertama kali dia jatuh cinta.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal cantik itu luka -->
+        <div class="modal fade" id="modalgadiskretek" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Gadis Kretek</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Gadis Kretek adalah sebuah novel karya Ratih Kumala. Novel ini berisi tentang perkembangan industri kretek 
+                pada zaman periode penjajahan Belanda hingga kemerdekaan. Di mana industri 
+                kretek tersebut, sang pemilik (Romo) mewariskan kepada putra sulungnya yang 
+                bernama Tegar.
+                <br>
+                <br>
+                Pak Raja sekarat. Dalam menanti ajal, ia memanggil satu nama perempuan yang bukan istrinya; Jeng Yah. 
+                Tiga anaknya, pewaris Kretek Djagad Raja, dimakan gundah. Sang ibu pun terbakar 
+                cemburu terlebih karena permintaan terakhir suaminya ingin bertemu Jeng Yah. 
+                Maka berpacu dengan malaikat maut, Lebas, Karim, dan Tegar, pergi ke pelosok 
+                Jawa untuk mencari Jeng Yah, sebelum ajal menjemput sang Ayah.
+                <br>
+                <br>
+                Perjalanan itu bagai napak tilas bisnis dan rahasia keluarga. Lebas, Karim, dan Tegar bertemu dengan 
+                pelinting tua dan menguak asal-usul Kretek Djagad Raja hingga menjadi kretek 
+                nomor 1 di Indonesia. Lebih dari itu, ketiganya juga mengetahui kisah cinta 
+                ayah mereka dengar; Jeng Yah, yang ternyata adalah pemilik Kretek Gadis, 
+                kretek lokal Kota M yang terkenal pada zamannya.
+                <br>
+                <br>
+                Apakah Lebas, Karim, dan Tegar akhirnya berhasil menemukan Jeng Yah?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal cantik itu luka -->
+        <div class="modal fade" id="modaldukuhparuk" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Ronggeng Dukuh Paruk</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Semangat Dukuh Paruk kembali menggeliat sejak Srintil dinobatkan menjadi ronggeng baru, menggantikan 
+                ronggeng terakhir yang mati dua belas tahun yang lalu. Bagi pedukuhan yang 
+                kecil, miskin, terpencil, dan bersahaja itu, ronggeng adalah perlambang. 
+                Tanpanya, dukuh itu merasa kehilangan jati diri. Dengan segera Srintil menjadi 
+                tokoh yang amat terkenal dan digandrungi. Cantik dan menggoda. Semua ingin 
+                pernah bersama ronggeng itu. Dari kaula biasa hingga pejabat-pejabat desa 
+                maupun kabupaten.
+                <br>
+                <br>
+                Namun malapetaka politik tahun 1965 membuat dukuh tersebut hancur, baik 
+                secara fisik maupun mental. Karena kebodohannya, mereka terbawa arus dan 
+                divonis sebagai manusia-manusia yang telah mengguncangkan negara ini. 
+                Pedukuhan itu dibakar. Ronggeng beserta para penabuh calungnya ditahan.
+                <br>
+                <br>
+                Hanya karena kecantikannya lah Srintil tidak diperlakukan semena-mena oleh 
+                para penguasa di penjara itu. Namun pengalaman pahit sebagai tahanan politik 
+                membuat Srintil sadar akan hakikatnya sebagai manusia.
+                <br>
+                <br>
+                Apakah Lebas, Karim, dan Tegar akhirnya berhasil menemukan Jeng Yah?
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    
+  <!-- footer -->
+  <div class="container-fluid m-0" style="background-color: #9B8BE3;">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+      <div class="col mb-3"> 
+        <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
+          <img src="images/elemen/Logo.svg" alt="Logo" width="40" height="40">
+        </a>
+        <p class="text-body-secondary">&copy; 2024</p>
+      </div>
+  
+      <div class="col mb-3">
+  
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Tombol Scroll to Top -->
+  <button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-primary">
+    ↑
+  </button>
+
+    <!-- Optional JavaScript -->
+
+    <!-- Optional JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Bootstrap Bundle JS (sudah termasuk Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

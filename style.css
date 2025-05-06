@@ -84,13 +84,13 @@ html {
     box-shadow: 12px 13px 24.5px 0px rgba(0, 0, 0, 0.25);
 }
 .card img{
-    margin-top: 18px;
-    margin-left: 25px;
-    width: 170px;
-    height: 260px;
-    object-fit: cover;
-    /* display: block; */
-    border-radius: 20px !important;
+  margin-top: 18px;
+  margin-left: 20px;
+  width: 170px;
+  height: 260px;
+  object-fit: cover;
+  /* display: block; */
+  border-radius: 20px !important;
 }
 .btn-align-icon{
     display: flex;
@@ -156,22 +156,33 @@ html {
 
 
 /* login */
-.btn.btn-primary.w-auto{
-    border-radius: 30px !important;
-    width: 100px !important;
-    background-color: #7D0A0A !important;
-    color: white !important;
-    font-family: 'Poppins', sans-serif !important;
-    border-width: 0.8px !important;
-}
-.login{
-    border-radius: 30px !important;
-    width: 70px !important;
-    background-color: #7D0A0A !important;
-    color: white !important;
-    font-family: 'Poppins', sans-serif !important;
+.login-icon {
+  color: inherit;
+  text-decoration: none;
 }
 
+.left-img {
+  background: url('images/elemen/img\ login\ 2.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* width: 100%; */
+}
+.w-75{
+  padding-right: 90px;
+  width: 75%!important;
+  /* padding-left: 60px; */
+}
+.btn-outline-dark{
+  border-radius: 30px !important;
+}
+.btn-dark{
+  border-radius: 30px !important;
+}
+.min-vh-100{
+  font-family: 'Poppins', sans-serif !important;
+}
 /* ===section5=== */
 .fw-bolder{
     margin-top: 40px;
@@ -186,6 +197,7 @@ html {
 .testimonial-section {
     text-align: center;
     margin-bottom: 40px;
+    height: 500px;
   }
 
   .testimonial-container {
@@ -296,9 +308,70 @@ html {
   }
 
 /* =====romance======= */
-
-  
-
+.bg-light{
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+      to right,
+      #FED2E2 0%,
+      #E9A5F1 32%,
+      #C68EFD 82%
+    );
+}
+.romance.mt-5 img{
+  margin-top: 60px;
+  height: 400px;
+  width: 1000px;
+  border-radius: 20px !important;
+}
+.bookslider-container {
+  overflow-x: hidden;
+  position: relative;
+  max-width: 100%;
+  margin-left: 135px;
+  margin-right: 135px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.bookslider-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollbook 10s linear infinite;
+  margin: 0;
+}
+.bookslider-container:hover .bookslider-track {
+  animation-play-state: paused;
+}
+.bookslider-card:hover {
+  transform: translateY(-8px);
+  /* box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); */
+}
+.bookslider-card {
+  flex-shrink: 0;
+  width: 200px;
+  background: white;
+  border-radius: 16px;
+  /* box-shadow: 20px 18px 31.2px 0px rgba(0, 0, 0, 0.25); */
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+}
+.bookslider-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.bookslider-title {
+  font-weight: bold;
+}
+.bookslider-author {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #666;
+}
+@keyframes scrollbook {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 .heart-icon {
     position: absolute;
@@ -308,27 +381,18 @@ html {
     color: black;
     cursor: pointer;
 }
-
+.modal.fade{
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300 !important;
+}
 /* ==fiksi */
-.fiksi1{
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 700 !important;
-    color: #7D0A0A !important;
-    font-size: 50px !important;
-    text-align: center;
-    margin-top: 100px;
-}
-.fiksi2{
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 300 !important;
-    color: #7D0A0A !important;
-    font-size: 20px !important;
-    text-align: center;
-    margin-top: 20px;
-}
-.fiksi img{
-    width: 500px !important;
-    height: 460px !important;
-    margin-left: 45px;
-    margin-top: 40px;
+.bg-light{
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    #F9E6CF 0%,
+    #FAC67A 32%,
+    #DA498D 82%
+  );
 }

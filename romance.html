@@ -20,211 +20,308 @@
     <!-- link untuk icon -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    
-
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Romance</title>
     <link rel="website icon" type="svg" href="images/elemen/Logo.svg">
   </head>
-  <body style="background-color: #EAD8B1 !important;">
-    <header class=""  style="background-color: white !important;">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <nav class="navbar">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                  <img src="images/elemen/Logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                  PustakaRasa
-                </a>
-              </div>
-            </nav>
-          </div>
-          <div class="col-5">
-            <nav class="navbar navbar-expand">
-              <div class="container-fluid">
-                <form class="d-flex" role="search">
-                  <input id="searchInput" class="form-control me-2" type="search" placeholder="Laut bercerita" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">cari</button>
-                </form>
-              </div>
-            </nav>
-          </div>
-          <div class="col">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Genre</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                  <li><a class="dropdown-item" href="fiksi.html">Fiksi</a></li>
-                  <li><a class="dropdown-item" href="#">Thriller</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
+  <body class="bg-light">
+    <header class="fixed-top d-flex" style="background-color: white;">
+      <!-- logo -->
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/elemen/Logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            PustakaRasa
+          </a>
         </div>
-      </div>
+      </nav>
+
+      <!-- navigasi -->
+      <ul class="nav nav-pills ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#about us">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Genre</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+            <li><a class="dropdown-item" href="fiksi.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="thriller.html">Thriller</a></li>
+            <li><a class="dropdown-item" href="historical.html">Historical Fiction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#review">Review</a>
+        </li>
+        <li class="p-1">
+          <span class="material-symbols-outlined cursor-pointer" id="login">
+            person
+            </span>
+        </li>
+      </ul>
     </header>
 
     <!-- section1 -->
     <section>
         <div class="container text-center romance mt-5">
-            <div class="row">
-              <div data-aos="fade-right" data-aos-duration="1000" class="col-8">
-                <img class="img-fluid romance1" src="images/elemen/elemen1.svg" alt="">
-              </div>
-              <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                <div data-aos="fade-left" data-aos-duration="1000" class="card1 mb-3">
-                    <img class="img-fluid imb-5" src="images/elemen/elemen2.svg" alt="">
-                </div>
-                <img data-aos="fade-left" data-aos-duration="1000" class="img-fluid" src="images/elemen/elemen3.svg" alt="">
-              </div>
-            </div>
-          </div>
-    </section>
+           <img src="images/elemen/Frame 19f.png" alt="">
+        </div>
 
-    <!-- section2 -->
-    <section>
-      <div class="container text-center" style="margin-top: 80px; font-family: 'Poppins';">
-        <div data-aos="fade-up" data-aos-duration="1000" class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-          <div class="col">
-            <!-- Card Component -->
-            <!--card baris 1  -->
-            <div class="book card" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/2191 hari di bandung_1_11zon.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Hanasya</p>
-                <h5 class="card-title">2191 Hari di Bandung</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel1">bookmark</span>
-                </div>
-              </div>
+        <div class="bookslider-container">
+          <div class="bookslider-track">
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modaldiktadanhukum">
+              <img src="images/romance/dikta dan hukum.png" alt="Book Cover">
+              <div class="bookslider-author">Dhia'an arah</div>
+              <div class="bookslider-title">Dikta dan hukum</div>
             </div>
-            <!-- card baris 2 -->
-            <div class="card mt-5" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/arah pulang untuk bela.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Neylis</p>
-                <h5 class="card-title">Arah Pulang Untuk Bela</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel2">bookmark</span>
-                </div>
-              </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalhellocello">
+              <img src="images/romance/hello cello.png" alt="Book Cover">
+              <div class="bookslider-author">Nadia Ristiyani</div>
+              <div class="bookslider-title">Hello, Cello</div>
             </div>
-          </div>
-          
-          <div class="col">
-            <div class="card" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/berhenti dikamu.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Gia Pratama</p>
-                <h5 class="card-title">Berhenti Dikamu</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel3">bookmark</span>
-                </div>
-              </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalhilmymilan">
+              <img src="images/romance/Hilmy Milan.png" alt="Book Cover">
+              <div class="bookslider-author">Nadia Ristiyani</div>
+              <div class="bookslider-title">Hilmy Milan</div>
             </div>
-  
-            <!-- card baris 2 -->
-            <div class="card mt-5" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/dikta dan hukum.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Dhia'an Farah</p>
-                <h5 class="card-title">Dikta dan Hukum</h>
-                  <div class="text-end mt-2">
-                    <span class="material-symbols-outlined bookmark-icon" data-id="novel4">bookmark</span>
-                  </div>
-              </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalsaat-saatjauh">
+              <img src="images/romance/saat saat jauh.png" alt="Book Cover">
+              <div class="bookslider-author">Lia Seplia</div>
+              <div class="bookslider-title">Metropop: Saat-Saat Jauh</div>
             </div>
-          </div>
-  
-          <div class="col">
-            <div class="card" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/five feet apart.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Rachael Lipponcott</p>
-                <h5 class="card-title">Five Feet Apart</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel5">bookmark</span>
-                </div>
-              </div>
+            <!-- Duplicate for infinite effect -->
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalfivefeetapart">
+              <img src="images/romance/five feet apart.png" alt="Book Cover">
+              <div class="bookslider-author">Nadia Ristiyani</div>
+              <div class="bookslider-title">Five Feet Apart</div>
             </div>
-  
-            <!-- card baris 2 -->
-            <div class="card mt-5" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/hello cello.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Nadia Ristivani</p>
-                <h5 class="card-title">Hello Cello</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel6">bookmark</span>
-                </div>
-              </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modaldiktadanhukum">
+              <img src="images/romance/dikta dan hukum.png" alt="Book Cover">
+              <div class="bookslider-author">Dhia'an arah</div>
+              <div class="bookslider-title">Dikta dan hukum</div>
             </div>
-          </div>
-  
-          <div class="col">
-            <div class="card" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/Hilmy Milan.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">Nadia Ristivani</p>
-                <h5 class="card-title">Hilmy Milan</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel7">bookmark</span>
-                </div>
-              </div>
-            </div>
-  
-            <!-- card baris 2 -->
-            <div class="card mt-5" style="width: 250px; height: 350px;">
-              <span class="material-symbols-outlined heart-icon">favorite</span>
-              <img src="images/romance/kado terbaik.png" class="card-img-top" alt="...">
-              <div class="card-body pt-1">
-                <p class="card-text m-0">J.S khairen</p>
-                <h5 class="card-title">Kado Terbaik</h5>
-                <div class="text-end mt-2">
-                  <span class="material-symbols-outlined bookmark-icon" data-id="novel8">bookmark</span>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalhellocello">
+              <img src="images/romance/hello cello.png" alt="Book Cover">
+              <div class="bookslider-author">Nadia Ristiyani</div>
+              <div class="bookslider-title">Hello Cello</div>
           </div>
         </div>
-      </div>
+
+        <!-- Modal dikta dan hukum -->
+        <div class="modal fade" id="modaldiktadanhukum" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Dikta dan Hukum</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Novel Dikta & Hukum merupakan sebuah karya fanfict dengan menjadikan orang nyata sebagai tokoh cerita seperti artis atau idol terkenal. 
+                Identitas tokoh dalam cerita akan berbeda karena hanya sebuah imajinasi atau fantasi saja. Novel Dikta & Hukum menceritakan tentang seorang tokoh bernama Dikta yang 
+                merupakan mahasiswa hukum tingkat akhir di sebuah universitas ternama dan menjadi salah satu mahasiswa terpintar.
+                <br>
+                <br>
+                Dikta merupakan tokoh idaman semua wanita karena penggambarannya yang sempurna. Ia kaya, rajin, pintar, baik, penyayang dan tentunya 
+                berparas tampan. Di sisi lain terdapat tokoh bernama Nadhira yang merupakan anak SMA kelas 12 dengan karakter berbanding terbalik dengan Dikta, pemalas dan mageran. 
+                Nadhira dikenal sebagai orang yang banyak mau, keras kepala dan suka mengeluh. Berbeda dengan image Dikta yang dikenal sebagai sosok yang serius dan disiplin.
+                <br>
+                <br>
+                Siapa sangka jika Dikta dijodohkan dengan gadis SMA bernama Nadhira itu dengan sifat dan watak mereka yang amat sangat berbanding terbalik bagai langit dan bumi. 
+                Demi menjaga perasaan kedua orang tuanya, mereka terpaksa harus terjebak dalam hubungan yang semakin rumit ini.
+                <br>
+                <br>
+                Seiring berjalannya waktu, Nadhira mulai menaruh rasa suka pada Dikta dan benar saja kali ini Nadhira benar-benar jatuh cinta pada sosok yang sejak dulu hanya 
+                dianggapnya sebagai kakak. Meskipun begitu kisah percintaan mereka yang rumit akan dibahas dan rahasia-rahasia Dikta yang selama ini dipendam akan mulai terungkap.
+                <br>
+                <br>
+                “Ini cerita sederhana yang efeknya luar biasa. Engga cuma bikin halu, tapi bikin pintar juga.”
+                “Ini cerita sederhana yang efeknya luar biasa. Engga cuma bikin halu, tapi bikin pintar juga.”
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal hello cello -->
+        <div class="modal fade" id="modalhellocello" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Hello, Cello</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Jatuh cinta lagi?
+                <br>
+                <br>
+                Hmm, sepertinya itu tak ada lagi dalam kamus Helga. Kegagalannya dalam urusan cinta dan selalu disakiti oleh cowok, 
+                membuatnya sudah merasa cukup! Untuk apa mengulangi semuanya lagi dari awal?
+                <br>
+                <br>
+                Sebagai seorang penulis, Helga selalu mengabadikan hal yang berkesan di dalam hidupnya dalam bentuk buku. Dan di tengah proses 
+                penulisan buku keenamnya, ia malah dipertemukan dengan seorang ‘buaya’ tampan bernama Cello.
+                <br>
+                <br>
+                Cello yang awalnya ingin mendekati Una – yaitu seorang gadis yang populer di kampusnya, justru terjebak dan malah semakin dekat 
+                dengan Helga yang aneh dan ajaib karena sering berpikir dan bersikap terlalu random.
+                <br>
+                <br>
+                Namun, siapa sangka Cello malah semakin penasaran dengan gadis yang hatinya sudah membeku seperti itu? Baginya, Helga merupakan 
+                sosok yang ‘unik’ dan belum pernah ia jumpai sebelumnya. Mampukah Cello, akhirnya menaklukan hati Helga?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal hilmy milan -->
+        <div class="modal fade" id="modalhilmymilan" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Hilmy Milan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Hilmy memang laki-laki yang sulit ditebak,
+                Nggak tahu kapan dia bercanda dan kapan dia serius.
+                <br>
+                <br>
+                Lihat aja E-mail permohonan untuk Milan menjadi pacarnya.
+                <br>
+                <br>
+                Dengan hormat,
+                <br>
+                Nama : Hilmy Ram Fahreza <br>
+                Umur : 21 Tahun <br>
+                Jenis Kelamin : Laki-laki <br>
+                Pendidikan Terakhir : Double Degree Manajemen Bisnis dan Pengelasan
+                <br>
+                <br>
+                Dengan surat lamaran ini saya mengajukan permohonan sebagai pekerja di dalam pikiran Milan dan menjabat posisi sebagai pacar. 
+                Saya memiliki pengalaman pacaran yang tidak terlalu mumpuni, tapi bisa lah dicoba. Sebagai bahan pertimbangan, saya 
+                melampirkan beberapa berkas penting sebagai berikut: <br>
+                <br>
+                Curriculum Vitae <br>
+                Pas foto format .jpeg (1 file) <br>
+                Sertifikat tambahan <br>
+                <br>Demikian surat lamaran pacaran ini saya buat.
+                Saya berharap dapat diterima sebagai pacar pertama Ibu Milani.
+                <br><br>Hormat saya, <br> <br>Hilmy Ram Fahreza <br>Ajaib. Untung ganteng anaknya.
+                Kalau kamu jadi Milan, gimana? Terima aja nggak, sih?                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal saat-saat jauh -->
+        <div class="modal fade" id="modalsaat-saatjauh" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Metropop: Saat-Saat Jauh</h5>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Aline dan Alex saling percaya bahwa mereka akan selalu bersama. Namun, keyakinan itu memudar seiring lebarnya jarak yang memisahkan mereka.
+                Alex pergi ke Kota Terik demi mengejar kesempatan sebagai dokter yang sesuai standar keluarga besarnya. 
+                Aline mempertahankan ambisi untuk mengurus Panti Jompo J&J di Kota Teduh.
+                <br>
+                <br>
+                Saat mendapatkan promosi, Alex mengajak Aline untuk menikah dan pindah ke Kota Terik. Aline menolak. Sejak awal, gadis itu 
+                sudah menegaskan tak akan meninggalkan panti. Mimpi-mimpi mereka tidak lagi bertemu di satu tujuan. Setelah empat tahun menjalani hubungan jarak jauh, mereka berpisah.
+                <br>
+                <br>
+                Mereka pun berusaha menjalin kehidupan baru bersama orang lain. Alex merasa Vanesa jawaban dari kemapanan yang ia perjuangkan. 
+                Sementara Aline merasa Rama akan mengerti keterikatan batinnya dengan panti.
+                <br>
+                <br>
+                Tiba-tiba Aline dan Alex harus bertemu kembali. Meski berhadap-hadapan, jarak antara mereka terasa tak kunjung menyempit.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal five feet apart -->
+        <div class="modal fade" id="modalfivefeetapart" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Five Feet Apart</h5>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-4 pb-4" style="text-align: justify;">
+                Stella Grant suka memegang kendali. Hanya satu yang tak bisa dia kendalikan, yaitu penyakit fibrosis kistik yang membuatnya keluar masuk rumah sakit. 
+                Pada titik tersebut, yang harus Stella lakukan adalah menjauhkan diri dari siapa pun atau apa pun yang mungkin bisa menularkan 
+                infeksi dan menggagalkan transplantasi paru-paru. Terpisah dua meter. Tidak ada perkecualian.
+                <br>
+                <br>
+                Satu-satunya hal yang ingin Will Newman kendalikan adalah keluar dari rumah sakit. Dia tidak peduli terhadap rangkaian perawatan penyakit 
+                fibrosis kistik, juga tidak peduli dengan uji coba obat klinis baru. Lagi pula, sebentar lagi Will akan berusia delapan belas tahun. 
+                Itu artinya dia punya kendali atas dirinya dan bisa pergi untuk melihat dunia, bukannya terkungkung selamanya di rumah sakit. 
+                Will merupakan sosok yang jelas-jelas harus Stella jauhi. Begitu Will bernapas di dekat Stella, gadis itu bisa kehilangan tempat dalam daftar transplantasi paru-paru.
+                <br>
+                <br>
+                Bahkan, salah satu dari mereka bisa mati. Satu-satunya cara agar mereka tetap hidup adalah dengan menjaga jarak. Namun, 
+                seiring waktu, terpisah dua meter terasa bukan seperti antisipasi keselamatan hidup mereka. Terpisah dua meter adalah hukuman.
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
+
     
   <!-- footer -->
-  <div class="container-fluid" >
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+  <div class="container-fluid m-0" style="background-color: #9B8BE3;">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+      <div class="col mb-3"> 
+        <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
+          <img src="images/elemen/Logo.svg" alt="Logo" width="40" height="40">
         </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+        <p class="text-body-secondary">&copy; 2024</p>
       </div>
   
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-      </ul>
+      <div class="col mb-3">
+  
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
     </footer>
   </div>
 
