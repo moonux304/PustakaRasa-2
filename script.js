@@ -2,64 +2,94 @@
 // script.js
 
 
-function validateForm() {
-    // Get value from input
-    const nama = document.getElementById('nama');
-    const email = document.getElementById('email');
-    const pesan = document.getElementById('pesan');
-    const resultDiv = document.getElementById('validation-result');
 
-    // Reset result div tiap kali submit
-    resultDiv.innerHTML = '';
-    resultDiv.style.color = 'black';
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
 
-    // Check validations
-    let errors = [];
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    if (nama.value.trim() === '') {
-        errors.push('Nama harus diisi.');
-    }
-    if (email.value === '') {
-        errors.push('email harus diisi');
-    }
-    if (pesan.value.trim() === '') {
-        errors.push('Pesan tidak boleh kosong.');
-    }
+      const nama = document.getElementById('name');
+      const email = document.getElementById('email');
+      const pesan = document.getElementById('message');
+      const resultDiv = document.getElementById('validation-result');
 
-    // Tampilkan hasil validasi
-    if (errors.length > 0) {
+      resultDiv.innerHTML = '';
+      resultDiv.style.color = 'black';
+
+      let errors = [];
+
+      if (nama.value.trim() === '') {
+        errors.push('Name is required.');
+      }
+
+      if (email.value.trim() === '') {
+        errors.push('Email is required.');
+      }
+
+      if (pesan.value.trim() === '') {
+        errors.push('Message cannot be empty.');
+      }
+
+      if (errors.length > 0) {
         resultDiv.innerHTML = errors.join('<br>');
-    } else {
-        resultDiv.innerHTML = `
-            <strong>Form berhasil dikirim!</strong><br><br>
-            <strong>Nama:</strong> ${nama.value}<br>
-            <strong>Email:</strong> ${email.value}<br>
-            <strong>Pesan:</strong> ${pesan.value.replace(/\n/g, '<br>')}
-        `;
-    }
-}
-
-// seacrh
-document.addEventListener("DOMContentLoaded", function () {
-  const input = document.getElementById("searchInput");
-  const cards = document.querySelectorAll(".card");
-
-  input.addEventListener("input", function () {
-    const query = input.value.toLowerCase();
-
-    cards.forEach(card => {
-      const title = card.querySelector(".card-title").textContent.toLowerCase();
-      if (title.includes(query)) {
-        card.style.display = "block";
+        resultDiv.style.color = 'red';
       } else {
-        card.style.display = "none";
+        resultDiv.innerHTML = `
+          <strong>Form submitted successfully!</strong><br><br>
+          <strong>Name:</strong> ${nama.value}<br>
+          <strong>Email:</strong> ${email.value}<br>
+          <strong>Message:</strong> ${pesan.value.replace(/\n/g, '<br>')}
+        `;
+        resultDiv.style.color = 'black';
+
+        form.reset();
       }
     });
-  });
+  }
+});
 
-  // Optional: biar tombol "cari" gak reload halaman
-  document.querySelector("form[role='search']").addEventListener("submit", function (e) {
-    e.preventDefault();
+
+// seacrh
+document.addEventListener('DOMContentLoaded', () => {
+ const titleEl = document.getElementById('modalTitle');
+  const authorEl = document.getElementById('modalAuthor');
+  const descEl = document.getElementById('modalDesc');
+  const imgEl = document.getElementById('modalImg');
+  const searchInput = document.getElementById('searchInput');
+
+  searchInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      const query = searchInput.value.trim().toLowerCase();
+      const cards = document.querySelectorAll('.bookslider-card');
+      let found = false;
+
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title').toLowerCase();
+
+        if (title.includes(query)) {
+          const realTitle = card.getAttribute('data-title');
+          const author = card.getAttribute('data-author');
+          const desc = card.getAttribute('data-desc');
+          const img = card.getAttribute('data-img');
+
+          titleEl.innerText = realTitle;
+          authorEl.innerText = author;
+          descEl.innerText = desc;
+          imgEl.src = img;
+
+          // Show modal
+          const modal = new bootstrap.Modal(document.getElementById('dynamicModal'));
+          modal.show();
+          found = true;
+        }
+      });
+
+      if (!found) {
+        alert("Buku tidak ditemukan!");
+      }
+    }
   });
 });
 
@@ -114,4 +144,35 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+/* autosslide
+let bannerIndex = 0;
+showBanner();
+
+// Function to change banner
+function nextBanner() {
+    bannerIndex += 1;
+    showBanner();
+}
+
+// Function to show banner
+function showBanner() {
+    // Get all banner elements
+    const banners = document.getElementsByClassName('pr_hero_sampul');
+
+    if (bannerIndex >= banners.length) {
+        bannerIndex = 0;
+    }
+
+    // Loop through all banner elements
+    for (let i = 0; i < banners.length; i++) {
+        banners[i].style.display = 'none';
+    }
+
+    // Show first banner
+    banners[bannerIndex].style.display = 'block';
+}
+
+// Set interval to change banner
+setInterval(nextBanner, 3000);*/
 

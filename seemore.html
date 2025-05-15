@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- pemanggilan css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <!-- link untuk fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- link untuk icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu_book" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>PustakaRasa</title>
+        <link rel="website icon" type="svg" href="images/elemen/Logo8.svg">
+  </head>
+  <body>
+    <header class="fixed-top d-flex" style="background-color: white;">
+      <!-- logo -->
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/elemen/Logo9.svg" alt="Logo" width="190" height="40" class="d-inline-block align-text-top">
+            
+          </a>
+        </div>
+      </nav>
+
+      <!-- search bar -->
+      <nav class="navbar justify-content-center">
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="What are you looking for?" />
+          <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M10,2A8,8,0,1,0,18,10a8,8,0,0,0-8-8Zm0,14A6,6,0,1,1,16,10,6,6,0,0,1,10,16Zm11.71,4.29-4.4-4.39a1,1,0,0,0-1.42,1.42l4.39,4.4a1,1,0,0,0,1.42-1.42Z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- navigasi -->
+      <ul class="nav nav-pills ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#home">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#about us">Cerita Kami</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Genre</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+            <li><a class="dropdown-item" href="fiksi.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="thriller.html">Thriller</a></li>
+            <li><a class="dropdown-item" href="historical.html">Historical Fiction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html#review">Ulasan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact.html">Kontak</a>
+        </li>
+        <li class="p-1 login">
+          <a class="login-icon" href="login.html">
+            <span class="material-symbols-outlined cursor-pointer" id="login">person</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- section -->
+    <section>
+      <div class="container-fluid" style="margin-top: 100px;">
+        <div class="row g-3">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="margin-top: 0px !important;">
+            <div class="bookslider-card"
+                data-bs-toggle="modal" data-bs-target="#modaldiktadanhukum"
+                data-title="Dikta dan hukum"
+                data-author="Dhia'an arah"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/romance/dikta dan hukum.png">
+                <img src="images/romance/dikta dan hukum.png" alt="Book Cover">
+                <div class="bookslider-author">Dhia'an arah</div>
+                <div class="bookslider-title">Dikta dan hukum</div>
+                </div>
+            </div>
+
+            <div class="bookslider-card"
+                data-bs-toggle="modal" data-bs-target="#modalhellocello"
+                data-title="Hello, Cello"
+                data-author="Nadia Ristiyani"
+                data-desc="Seorang novelis ternama ditemukan tewas. Detektif Kaga harus mengungkap teka-teki misterius."
+                data-img="images/romance/hello cello.png">
+                <img src="images/romance/hello cello.png" alt="Book Cover">
+                <div class="bookslider-author">Nadia Ristiyani</div>
+                <div class="bookslider-title">Hello, Cello</div>
+            </div>
+
+            <div class="bookslider-card"
+                data-bs-toggle="modal" data-bs-target="#modalhilmymilan"
+                data-title="Hilmy Milan"
+                data-author="Nadia Ristiyani"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/romance/Hilmy Milan.png">
+                <img src="images/romance/Hilmy Milan.png" alt="Book Cover">
+                <div class="bookslider-author">Nadia Ristiyani</div>
+                <div class="bookslider-title">Hilmy Milan</div>
+            </div>
+
+            <div class="bookslider-card"
+                data-bs-toggle="modal" data-bs-target="#modalsaat-saatjauh"
+                data-title="Metropop: Saat-Saat Jauh"
+                data-author="Lia Seplia"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/romance/saat saat jauh.png">
+                <img src="images/romance/saat saat jauh.png" alt="Book Cover">
+                <div class="bookslider-author">Lia Seplia</div>
+                <div class="bookslider-title">Metropop: Saat-Saat Jauh</div>
+            </div>
+
+            <div class="bookslider-card"
+                data-bs-toggle="modal" data-bs-target="#modalfivefeetapart"
+                data-title="Five Feet Apart"
+                data-author="Nadia Ristiyani"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/romance/five feet apart.png">
+                <img src="images/romance/five feet apart.png" alt="Book Cover">
+                <div class="bookslider-author">Nadia Ristiyani</div>
+                <div class="bookslider-title">Five Feet Apart</div>
+            </div>
+
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalCatatanpembunuhanSangNovelis"
+                data-title="Catatan pembunuhan Sang Novelis"
+                data-author="Keigo Higashino"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/fiksi/Novel Catatan Pembunuhan Sang Noveli.jpeg">
+                <img src="images/fiksi/Novel Catatan Pembunuhan Sang Noveli.jpeg" alt="Book Cover">
+                <div class="bookslider-author">Keigo Higashino</div>
+                <div class="bookslider-title">Catatan pembunuhan Sang Novelis</div>
+            </div>
+
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalKeajaibanTokoKelontongNamiya"
+                data-title="Keajaiban Toko Kelontong Namiya"
+                data-author="Keigo Higashino"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/fiksi/toko kelontong namiya_14_11zon.jpeg">
+                <img src="images/fiksi/toko kelontong namiya_14_11zon.jpeg" alt="Book Cover">
+                <div class="bookslider-author">Keigo Higashino</div>
+                <div class="bookslider-title">Keajaiban Toko Kelontong Namiya</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalLePetitPrince"
+                data-title="Le Petit Prince"
+                data-author="Antoine de Saint-Exupéry"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/fiksi/pangeran cilik le petit prince_10_11zon.jpeg">
+                <img src="images/fiksi/pangeran cilik le petit prince_10_11zon.jpeg" alt="Book Cover">
+                <div class="bookslider-author">Antoine de Saint-Exupéry</div>
+                <div class="bookslider-title">Le Petit Prince</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalPerangOpium"
+                data-title="Perang Opium (The Poppy War)"
+                data-author="Fadiyah Alaidrus"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/fiksi/perang opiumj.jpg">
+                <img src="images/fiksi/perang opiumj.jpg" alt="Book Cover">
+                <div class="bookslider-author">Fadiyah Alaidrus</div>
+                <div class="bookslider-title">Perang Opium (The Poppy War)</div>
+            </div>
+                <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalAlaia"
+                data-title="Alaia"
+                data-author="Raden Chedid"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="iimages/fiksi/alaia.jpg">
+                <img src="images/fiksi/alaia.jpg" alt="Book Cover">
+                <div class="bookslider-author">Raden Chedid</div>
+                <div class="bookslider-title">Alaia</div>
+            </div>
+
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalduadinihari"
+                data-title="Dua Dini Hari"
+                data-author="Chandra Bientang"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/thriller ariv/Dua dini hari.jpg">
+                <img src="images/thriller ariv/Dua dini hari.jpg" alt="Book Cover">
+                <div class="bookslider-author">Chandra Bientang</div>
+                <div class="bookslider-title">Dua Dini Hari</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalhartakarunvoc"
+                data-title="Misteri Harta karun VOC"
+                data-author="E.S. Ito"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/thriller ariv/misteri harta karun voc.jpg">
+                <img src="images/thriller ariv/misteri harta karun voc.jpg" alt="Book Cover">
+                <div class="bookslider-author">E.S. Ito</div>
+                <div class="bookslider-title">Misteri Harta karun VOC</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalpatunggaram"
+                data-title="Misteri patung Garam"
+                data-author="Ruwi Meita"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/thriller ariv/misteri patung garam.jpg">
+                <img src="images/thriller ariv/misteri patung garam.jpg" alt="Book Cover">
+                <div class="bookslider-author">Ruwi Meita</div>
+                <div class="bookslider-title">Misteri patung Garam</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalnostalgiamerah"
+                data-title="Nostalgia Merah"
+                data-author="M. Fadl"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/thriller ariv/nostalgia merah.jpg">
+                <img src="images/thriller ariv/nostalgia merah.jpg" alt="Book Cover">
+                <div class="bookslider-author">M. Fadl</div>
+                <div class="bookslider-title">Nostalgia Merah</div>
+            </div>
+                
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalplayingvictim"
+                data-title="Playing Victim"
+                data-author="Eva Sri Rahayu"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/thriller ariv/playing victim.jpg">
+                <img src="images/thriller ariv/playing victim.jpg" alt="Book Cover">
+                <div class="bookslider-author">Eva Sri Rahayu</div>
+                <div class="bookslider-title">Playing Victim</div>
+            </div>
+            <div class="bookslider-card"
+                data-bs-toggle="modal" data-bs-target="#modalrencanabesar"
+                data-title="Rencana Besar"
+                data-author="Tsugaeda"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/thriller ariv/rencana besar.jpg">
+                <img src="images/thriller ariv/rencana besar.jpg" alt="Book Cover">
+                <div class="bookslider-author">Tsugaeda</div>
+                <div class="bookslider-title">Rencana Besar</div>
+            </div>
+            
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalMelangkah"
+                data-title="Melangkah"
+                data-author="J.S Khairen"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/fiksi/melangkah_11zon.png">
+                <img src="images/fiksi/melangkah_11zon.png" alt="Book Cover">
+                <div class="bookslider-author">J.S Khairen</div>
+                <div class="bookslider-title">Melangkah</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalCatatanpembunuhanSangNovelis"
+                data-title="Catatan pembunuhan Sang Novelis"
+                data-author="Keigo Higashino"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/fiksi/Novel Catatan Pembunuhan Sang Noveli.jpeg">
+                <img src="images/fiksi/Novel Catatan Pembunuhan Sang Noveli.jpeg" alt="Book Cover">
+                <div class="bookslider-author">Keigo Higashino</div>
+                <div class="bookslider-title">Catatan pembunuhan Sang Novelis</div>
+            </div>
+
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalcantikituluka"
+                data-title="Cantik Itu Luka"
+                data-author="Eka Kurniawan"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/historical fiction/cantik itu luka.jpg">
+                <img src="images/historical fiction/cantik itu luka.jpg" alt="Book Cover">
+                <div class="bookslider-author">Eka Kurniawan</div>
+                <div class="bookslider-title">Cantik Itu Luka</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalamba"
+                data-title="Amba"
+                data-author="Laksmi Pamuntjak"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/historical fiction/amba.jpg">
+                <img src="images/historical fiction/amba.jpg" alt="Book Cover">
+                <div class="bookslider-author">Laksmi Pamuntjak</div>
+                <div class="bookslider-title">Amba</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modallautbercerita"
+                data-title="Laut Bercerita"
+                data-author="Leila S. Chudori"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/historical fiction/laut bercerita.jpg">
+                <img src="images/historical fiction/laut bercerita.jpg" alt="Book Cover">
+                <div class="bookslider-author">Leila S. Chudori</div>
+                <div class="bookslider-title">Laut Bercerita</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalgadiskretek"
+                data-title="Gadis Kretek"
+                data-author="Gadis Kretek"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/historical fiction/gadis kretek.jpg">
+                <img src="images/historical fiction/gadis kretek.jpg" alt="Book Cover">
+                <div class="bookslider-author">Ratih Kumala</div>
+                <div class="bookslider-title">Gadis Kretek</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalpulang"
+                data-title="Pulang"
+                data-author="Leila S. Chudori"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/historical fiction/pulang.jpg">
+                <img src="images/historical fiction/pulang.jpg" alt="Book Cover">
+                <div class="bookslider-author">Leila S. Chudori</div>
+                <div class="bookslider-title">Pulang</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modalnamakualam"
+                data-title="Namaku Alam"
+                data-author="Leila S. Chudori"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/historical fiction/namaku alam.jpg">
+                <img src="images/historical fiction/namaku alam.jpg" alt="Book Cover">
+                <div class="bookslider-author">Leila S. Chudori</div>
+                <div class="bookslider-title">Namaku Alam</div>
+            </div>
+            <div class="bookslider-card" 
+                data-bs-toggle="modal" data-bs-target="#modaldukuhparuk"
+                data-title="Ronggeng Dukuh Paruk"
+                data-author="Dhia'an arah"
+                data-desc="Seorang novelis ternama ditemukan tewas"
+                data-img="images/thriller ariv/Dua dini hari.jpg">
+                    <img src="images/historical fiction/dongeng dukuh paruk.jpg" alt="Book Cover">
+                    <div class="bookslider-author">Dhia'an arah</div>
+                    <div class="bookslider-title">Ronggeng Dukuh Paruk</div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pustaka-footer">
+        <div class="pustaka-container">
+            <div class="pustaka-footer-content">
+                <div class="pustaka-logo-section">
+                    <img src="images/elemen/logo9.svg" alt="Pustaka Logo" class="pustaka-logo">
+                    <p class="pustaka-tagline">We help you find your dream plant</p>
+                    <div class="pustaka-social-icons">
+                        <a href="https://github.com/moonux304" class="pustaka-social-link pustaka-facebook">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://instagram.com/moonoverh" class="pustaka-social-link pustaka-instagram">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/moonoverh" class="pustaka-social-link pustaka-twitter">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pustaka-footer-nav">
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Home</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#">Genre</a></li>
+                            <li><a href="#review">Review</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Genre</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="romance.html">Romance</a></li>
+                            <li><a href="fiksi.html">Fantasy</a></li>
+                            <li><a href="thriller.html">Thriller</a></li>
+                            <li><a href="historical.html">Historical fiction</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Contact</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="contact.html">Name</a></li>
+                            <li><a href="contact.html">Email</a></li>
+                            <li><a href="contact.html">Message</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pustaka-copyright">
+                <p>2023 all Right Reserved Term of use PustakaRasa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal - Tempat untuk Menampilkan Info Buku -->
+    <div class="modal fade" id="dynamicModal" tabindex="-1" aria-labelledby="dynamicModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImg" src="" alt="book image" class="img-fluid">
+            <p id="modalAuthor"></p>
+            <p id="modalDesc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tombol Scroll to Top -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-primary">↑</button>
+
+    <!-- Optional JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Init -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

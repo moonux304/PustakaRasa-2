@@ -11,11 +11,13 @@
 
     <!-- pemanggilan css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
   
     <!-- link untuk fonts Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- link untuk icon -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -24,7 +26,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Romance</title>
-    <link rel="website icon" type="svg" href="images/elemen/Logo.svg">
+    <link rel="website icon" type="svg" href="images/elemen/Logo8.svg">
   </head>
   <body class="bg-light">
     <header class="fixed-top d-flex" style="background-color: white;">
@@ -32,9 +34,21 @@
       <nav class="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="images/elemen/Logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            PustakaRasa
+            <img src="images/elemen/Logo9.svg" alt="Logo" width="190" height="40" class="d-inline-block align-text-top">
+            
           </a>
+        </div>
+      </nav>
+
+      <!-- search bar -->
+      <nav class="navbar justify-content-center">
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="What are you looking for?" />
+          <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M10,2A8,8,0,1,0,18,10a8,8,0,0,0-8-8Zm0,14A6,6,0,1,1,16,10,6,6,0,0,1,10,16Zm11.71,4.29-4.4-4.39a1,1,0,0,0-1.42,1.42l4.39,4.4a1,1,0,0,0,1.42-1.42Z"/>
+            </svg>
+          </button>
         </div>
       </nav>
 
@@ -58,57 +72,126 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.html#review">Review</a>
         </li>
-        <li class="p-1">
-          <span class="material-symbols-outlined cursor-pointer" id="login">
-            person
-            </span>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact.html">Contact us</a>
         </li>
+        <li class="p-1 login">
+          <a class="login-icon" href="login.html"> <!-- Ganti "login.html" sesuai tujuanmu -->
+            <span class="material-symbols-outlined cursor-pointer" id="login">
+              person
+            </span>
+          </a>
+        </li>        
       </ul>
     </header>
 
     <!-- section1 -->
-    <section>
-        <div class="container text-center romance mt-5">
-           <img src="images/elemen/Frame 19f.png" alt="">
-        </div>
+      <div class="pr_kontainer">
+        <!-- Hero Section -->
+        <section class="pr_hero" id="home" style="background-color: #F9E6CF;">
+          <div class="pr_hero_konten">
+            <h1 class="pr_hero_judul">Romance <br>Where Hearts Speak Louder Than Words</h1>
+            <p class="pr_hero_deskripsi">Setiap cerita adalah perjalanan emosi. 
+              Tenggelam dalam kisah cinta yang menyayat, menyembuhkan, dan meninggalkan bekas</p>
+            <div class="pr_hero_statistik">
+              <div class="pr_hero_stat">
+                <div class="pr_hero_angka">20+</div>
+                <div class="pr_hero_label">Rekomendasi yang Tersedia</div>
+              </div>
+              <div class="pr_hero_pembatas"></div>
+              <div class="pr_hero_stat">
+                <div class="pr_hero_angka">100+</div>
+                <div class="pr_hero_label">Sahabat Baca</div>
+              </div>
+            </div>
+            <a href="seemore.html" class="pr_hero_tombol">
+              Jelajahi 
+              <span class="pr_hero_panah">→</span>
+            </a>
+          </div>
+          <!-- Sampul Buku -->
+           <img src="images/mockups/Group 42.png" alt="Sampul buku Serangkai oleh Valerie Patkar" class="pr_hero_sampul"> 
+        </section>
+      </div>
 
+    <section>
         <div class="bookslider-container">
           <div class="bookslider-track">
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modaldiktadanhukum">
+            <div class="bookslider-card"
+            data-bs-toggle="modal" data-bs-target="#modaldiktadanhukum"
+            data-title="Dikta dan hukum"
+            data-author="Dhia'an arah"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/romance/dikta dan hukum.png">
               <img src="images/romance/dikta dan hukum.png" alt="Book Cover">
               <div class="bookslider-author">Dhia'an arah</div>
               <div class="bookslider-title">Dikta dan hukum</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalhellocello">
+            <div class="bookslider-card"
+            data-bs-toggle="modal" data-bs-target="#modalhellocello"
+            data-title="Hello, Cello"
+            data-author="Nadia Ristiyani"
+            data-desc="Seorang novelis ternama ditemukan tewas. Detektif Kaga harus mengungkap teka-teki misterius."
+            data-img="images/romance/hello cello.png">
               <img src="images/romance/hello cello.png" alt="Book Cover">
               <div class="bookslider-author">Nadia Ristiyani</div>
               <div class="bookslider-title">Hello, Cello</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalhilmymilan">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modalhilmymilan"
+            data-title="Hilmy Milan"
+            data-author="Nadia Ristiyani"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/romance/Hilmy Milan.png">
               <img src="images/romance/Hilmy Milan.png" alt="Book Cover">
               <div class="bookslider-author">Nadia Ristiyani</div>
               <div class="bookslider-title">Hilmy Milan</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalsaat-saatjauh">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modalsaat-saatjauh"
+            data-title="Metropop: Saat-Saat Jauh"
+            data-author="Lia Seplia"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/romance/saat saat jauh.png">
               <img src="images/romance/saat saat jauh.png" alt="Book Cover">
               <div class="bookslider-author">Lia Seplia</div>
               <div class="bookslider-title">Metropop: Saat-Saat Jauh</div>
             </div>
             <!-- Duplicate for infinite effect -->
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalfivefeetapart">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modalfivefeetapart"
+            data-title="Five Feet Apart"
+            data-author="Nadia Ristiyani"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/romance/five feet apart.png">
               <img src="images/romance/five feet apart.png" alt="Book Cover">
               <div class="bookslider-author">Nadia Ristiyani</div>
               <div class="bookslider-title">Five Feet Apart</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modaldiktadanhukum">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modaldiktadanhukum"
+            data-title="Dikta dan hukum"
+            data-author="Dhia'an arah"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/romance/dikta dan hukum.png">
               <img src="images/romance/dikta dan hukum.png" alt="Book Cover">
               <div class="bookslider-author">Dhia'an arah</div>
               <div class="bookslider-title">Dikta dan hukum</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalhellocello">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modalhellocello"
+            data-title="Hello Cell"
+            data-author="Nadia Ristiyani"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/romance/hello cello.png">
               <img src="images/romance/hello cello.png" alt="Book Cover">
               <div class="bookslider-author">Nadia Ristiyani</div>
               <div class="bookslider-title">Hello Cello</div>
+            </div>
           </div>
         </div>
 
@@ -139,7 +222,6 @@
                 dianggapnya sebagai kakak. Meskipun begitu kisah percintaan mereka yang rumit akan dibahas dan rahasia-rahasia Dikta yang selama ini dipendam akan mulai terungkap.
                 <br>
                 <br>
-                “Ini cerita sederhana yang efeknya luar biasa. Engga cuma bikin halu, tapi bikin pintar juga.”
                 “Ini cerita sederhana yang efeknya luar biasa. Engga cuma bikin halu, tapi bikin pintar juga.”
               </div>
             </div>
@@ -223,7 +305,6 @@
             <div class="modal-content rounded-4">
               <div class="modal-header border-0">
                 <h5 class="modal-title w-100 text-center fw-bold" id="modalLabel1">Metropop: Saat-Saat Jauh</h5>
-                </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body px-4 pb-4" style="text-align: justify;">
@@ -277,52 +358,80 @@
 
     
   <!-- footer -->
-  <div class="container-fluid m-0" style="background-color: #9B8BE3;">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
-      <div class="col mb-3"> 
-        <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
-          <img src="images/elemen/Logo.svg" alt="Logo" width="40" height="40">
-        </a>
-        <p class="text-body-secondary">&copy; 2024</p>
-      </div>
-  
-      <div class="col mb-3">
-  
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
+    <footer class="pustaka-footer">
+        <div class="pustaka-container">
+            <div class="pustaka-footer-content">
+                <div class="pustaka-logo-section">
+                    <img src="images/elemen/logo9.svg" alt="Pustaka Logo" class="pustaka-logo">
+                    <p class="pustaka-tagline">We help you find your dream plant</p>
+                    <div class="pustaka-social-icons">
+                        <a href="https://github.com/moonux304" class="pustaka-social-link pustaka-facebook">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://instagram.com/moonoverh" class="pustaka-social-link pustaka-instagram">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/moonoverh" class="pustaka-social-link pustaka-twitter">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+<div class="pustaka-footer-nav">
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Home</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#">Genre</a></li>
+                            <li><a href="#review">Review</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Genre</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="romance.html">Romance</a></li>
+                            <li><a href="fiksi.html">Fantasy</a></li>
+                            <li><a href="thriller.html">Thriller</a></li>
+                            <li><a href="historical.html">Historical fiction</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Contact</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="contact.html">Name</a></li>
+                            <li><a href="contact.html">Email</a></li>
+                            <li><a href="contact.html">Message</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pustaka-copyright">
+                <p>2023 all Right Reserved Term of use PustakaRasa</p>
+            </div>
+        </div>
     </footer>
+    </div>
+
+  <!-- Modal - Tempat untuk Menampilkan Info Buku -->
+  <div class="modal fade" id="dynamicModal" tabindex="-1" aria-labelledby="dynamicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImg" src="" alt="book image" class="img-fluid">
+          <p id="modalAuthor"></p>
+          <p id="modalDesc"></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Tombol Scroll to Top -->
@@ -332,8 +441,7 @@
 
     <!-- Optional JavaScript -->
 
-    <!-- Optional JavaScript -->
-    <script src="script.js"></script>
+    
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Bootstrap Bundle JS (sudah termasuk Popper.js) -->
@@ -343,5 +451,8 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- Optional JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>

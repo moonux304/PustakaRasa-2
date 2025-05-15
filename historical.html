@@ -11,11 +11,13 @@
 
     <!-- pemanggilan css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
   
     <!-- link untuk fonts Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- link untuk icon -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -24,7 +26,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Romance</title>
-    <link rel="website icon" type="svg" href="images/elemen/Logo.svg">
+    <link rel="website icon" type="svg" href="images/elemen/Logo8.svg">
   </head>
   <body class="bg-light">
     <header class="fixed-top d-flex" style="background-color: white;">
@@ -32,19 +34,31 @@
       <nav class="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="images/elemen/Logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            PustakaRasa
+            <img src="images/elemen/Logo9.svg" alt="Logo" width="190" height="40" class="d-inline-block align-text-top">
+            
           </a>
+        </div>
+      </nav>
+
+      <!-- search bar -->
+      <nav class="navbar justify-content-center">
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="What are you looking for?" />
+          <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M10,2A8,8,0,1,0,18,10a8,8,0,0,0-8-8Zm0,14A6,6,0,1,1,16,10,6,6,0,0,1,10,16Zm11.71,4.29-4.4-4.39a1,1,0,0,0-1.42,1.42l4.39,4.4a1,1,0,0,0,1.42-1.42Z"/>
+            </svg>
+          </button>
         </div>
       </nav>
 
       <!-- navigasi -->
       <ul class="nav nav-pills ms-auto">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html#about us">About us</a>
+          <a class="nav-link" aria-current="page" href="#about us">About us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Genre</a>
@@ -56,61 +70,128 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html#review">Review</a>
+          <a class="nav-link" aria-current="page" href="#review">Review</a>
         </li>
-        <li class="p-1">
-          <span class="material-symbols-outlined cursor-pointer" id="login">
-            person
-            </span>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact.html">Contact us</a>
         </li>
+        <li class="p-1 login">
+          <a class="login-icon" href="login.html"> <!-- Ganti "login.html" sesuai tujuanmu -->
+            <i class="ri-account-circle-line"></i>
+          </a>
+        </li>        
       </ul>
     </header>
+    
+    <div class="pr_kontainer">
+        <!-- Hero Section -->
+        <section class="pr_hero" style="background-color: #F9E6CF;">
+          <div class="pr_hero_konten">
+            <h1 class="pr_hero_judul">Historicall fiction<br>Jejak Waktu dalam Lembaran Kisah</h1>
+            <p class="pr_hero_deskripsi">Melalui novel-novel ini, temukan peristiwa dan tokoh yang 
+              mengubah dunia—diceritakan kembali dengan sentuhan rasa</p>
+            <div class="pr_hero_statistik">
+              <div class="pr_hero_stat">
+                <div class="pr_hero_angka">20+</div>
+                <div class="pr_hero_label">Rekomendasi yang Tersedia</div>
+              </div>
+              <div class="pr_hero_pembatas"></div>
+              <div class="pr_hero_stat">
+                <div class="pr_hero_angka">100+</div>
+                <div class="pr_hero_label">Sahabat Baca</div>
+              </div>
+            </div>
+            <a href="seemore.html" class="pr_hero_tombol">
+              Jelajahi 
+              <span class="pr_hero_panah">→</span>
+            </a>
+          </div>
+          <!-- Sampul Buku -->
+           <img src="images/mockups/elemenhero33.png" alt="Sampul buku Serangkai oleh Valerie Patkar" class="pr_hero_sampul"> 
+        </section>
+      </div>
 
     <!-- section1 -->
     <section>
-        <div class="container text-center romance mt-5">
-           <img src="images/elemen/Frame 19f.png" alt="">
-        </div>
-
         <div class="bookslider-container">
           <div class="bookslider-track">
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalcantikituluka">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modalcantikituluka"
+            data-title="Cantik Itu Luka"
+            data-author="Eka Kurniawan"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/historical fiction/cantik itu luka.jpg">
               <img src="images/historical fiction/cantik itu luka.jpg" alt="Book Cover">
               <div class="bookslider-author">Eka Kurniawan</div>
               <div class="bookslider-title">Cantik Itu Luka</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalamba">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modalamba"
+            data-title="Amba"
+            data-author="Laksmi Pamuntjak"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/historical fiction/amba.jpg">
               <img src="images/historical fiction/amba.jpg" alt="Book Cover">
               <div class="bookslider-author">Laksmi Pamuntjak</div>
               <div class="bookslider-title">Amba</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modallautbercerita">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modallautbercerita"
+            data-title="Laut Bercerita"
+            data-author="Leila S. Chudori"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/historical fiction/laut bercerita.jpg">
               <img src="images/historical fiction/laut bercerita.jpg" alt="Book Cover">
               <div class="bookslider-author">Leila S. Chudori</div>
               <div class="bookslider-title">Laut Bercerita</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalgadiskretek">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modalgadiskretek"
+            data-title="Gadis Kretek"
+            data-author="Gadis Kretek"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/historical fiction/gadis kretek.jpg">
               <img src="images/historical fiction/gadis kretek.jpg" alt="Book Cover">
               <div class="bookslider-author">Ratih Kumala</div>
               <div class="bookslider-title">Gadis Kretek</div>
             </div>
             <!-- Duplicate for infinite effect -->
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalpulang">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modalpulang"
+            data-title="Pulang"
+            data-author="Leila S. Chudori"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/historical fiction/pulang.jpg">
               <img src="images/historical fiction/pulang.jpg" alt="Book Cover">
               <div class="bookslider-author">Leila S. Chudori</div>
               <div class="bookslider-title">Pulang</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalnamakualam">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modalnamakualam"
+            data-title="Namaku Alam"
+            data-author="Leila S. Chudori"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/historical fiction/namaku alam.jpg">
               <img src="images/historical fiction/namaku alam.jpg" alt="Book Cover">
               <div class="bookslider-author">Leila S. Chudori</div>
               <div class="bookslider-title">Namaku Alam</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modaldukuhparuk">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modaldukuhparuk"
+            data-title="Ronggeng Dukuh Paruk"
+            data-author="Dhia'an arah"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/thriller ariv/Dua dini hari.jpg">
                 <img src="images/historical fiction/dongeng dukuh paruk.jpg" alt="Book Cover">
                 <div class="bookslider-author">Dhia'an arah</div>
                 <div class="bookslider-title">Ronggeng Dukuh Paruk</div>
             </div>
-            <div class="bookslider-card" data-bs-toggle="modal" data-bs-target="#modalcantikituluka">
+            <div class="bookslider-card" 
+            data-bs-toggle="modal" data-bs-target="#modalcantikituluka"
+            data-title="Cantik Itu Luka"
+            data-author="Eka Kurniawan"
+            data-desc="Seorang novelis ternama ditemukan tewas"
+            data-img="images/historical fiction/cantik itu luka.jpg">
               <img src="images/historical fiction/cantik itu luka.jpg" alt="Book Cover">
               <div class="bookslider-author">Eka Kurniawan</div>
               <div class="bookslider-title">Cantik Itu Luka</div>
@@ -350,52 +431,80 @@
 
     
   <!-- footer -->
-  <div class="container-fluid m-0" style="background-color: #9B8BE3;">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
-      <div class="col mb-3"> 
-        <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
-          <img src="images/elemen/Logo.svg" alt="Logo" width="40" height="40">
-        </a>
-        <p class="text-body-secondary">&copy; 2024</p>
-      </div>
-  
-      <div class="col mb-3">
-  
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
+    <footer class="pustaka-footer">
+        <div class="pustaka-container">
+            <div class="pustaka-footer-content">
+                <div class="pustaka-logo-section">
+                    <img src="images/elemen/logo9.svg" alt="Pustaka Logo" class="pustaka-logo">
+                    <p class="pustaka-tagline">We help you find your dream plant</p>
+                    <div class="pustaka-social-icons">
+                        <a href="https://github.com/moonux304" class="pustaka-social-link pustaka-facebook">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://instagram.com/moonoverh" class="pustaka-social-link pustaka-instagram">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/moonoverh" class="pustaka-social-link pustaka-twitter">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pustaka-footer-nav">
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Home</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#">Genre</a></li>
+                            <li><a href="#review">Review</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Genre</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="romance.html">Romance</a></li>
+                            <li><a href="fiksi.html">Fantasy</a></li>
+                            <li><a href="thriller.html">Thriller</a></li>
+                            <li><a href="historical.html">Historical fiction</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pustaka-nav-column">
+                        <h3 class="pustaka-nav-title">Contact</h3>
+                        <ul class="pustaka-nav-links">
+                            <li><a href="contact.html">Name</a></li>
+                            <li><a href="contact.html">Email</a></li>
+                            <li><a href="contact.html">Message</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pustaka-copyright">
+                <p>2023 all Right Reserved Term of use PustakaRasa</p>
+            </div>
+        </div>
     </footer>
+    </div>
+
+  <!-- Modal - Tempat untuk Menampilkan Info Buku -->
+  <div class="modal fade" id="dynamicModal" tabindex="-1" aria-labelledby="dynamicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImg" src="" alt="book image" class="img-fluid">
+          <p id="modalAuthor"></p>
+          <p id="modalDesc"></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Tombol Scroll to Top -->

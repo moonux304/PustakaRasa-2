@@ -44,6 +44,128 @@ html {
 }
 
 /* section1 */
+
+/* Container Utama */
+.pr_kontainer {
+  /* max-width: 1200px; */
+  padding: 70px;
+  margin-top: 20px;
+}
+        
+/* Hero Section */
+.pr_hero {
+  font-family: 'Poppins', sans-serif;
+  background-color: #8F87F1;
+  border-radius: 20px;
+  padding: 40px;
+  padding-right: 0px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+        
+.pr_hero_konten {
+  width: 60%;
+  position: relative;
+  z-index: 2;
+}
+        
+.pr_hero_judul {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  }
+        
+.pr_hero_deskripsi {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+        
+.pr_hero_statistik {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+        
+.pr_hero_stat {
+  margin-right: 20px;
+}
+        
+.pr_hero_angka {
+   font-size: 1.8rem;
+   font-weight: 700;
+   margin-bottom: 5px;
+}
+        
+.pr_hero_label {
+  font-size: 0.9rem;
+}
+        
+.pr_hero_pembatas {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 20px;
+}        
+.pr_hero_tombol {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 12px 10px 15.3px 0px rgba(0, 0, 0, 0.25);
+}
+        
+.pr_hero_tombol:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+        
+.pr_hero_panah {
+  margin-left: 8px;
+}
+        
+.pr_hero_sampul {
+  position: relative;
+  z-index: 1;
+  width: 328px;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+}
+.pr_hero_sampul:hover{
+  transform: translateY(-10px);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+        
+.pr_hero_coretan {
+  position: absolute;
+  z-index: 0;
+}
+        
+.pr_hero_coretan1 {
+  top: 10px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+}
+        
+.pr_hero_coretan2 {
+  bottom: 40px;
+  right: 280px;
+  width: 120px;
+  height: 80px;
+}
+        
 .d-block.w-100{
     margin-top: 80px;
     height: 450px;
@@ -117,6 +239,26 @@ html {
     text-align: center;
     margin-top: 40px;
 }
+.about-img img{
+  padding-left: 90px;
+}
+.text-muted.about{
+  /* background: #C68EFD; */
+  width: 360px;
+  border-radius: 20px;
+}
+@media (max-width: 992px){
+  .about-img img{
+    padding-left: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .text-muted.about{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
 /* section4 */
 .custom-section{
@@ -153,36 +295,6 @@ html {
     z-index: 1000;
 }
 
-
-
-/* login */
-.login-icon {
-  color: inherit;
-  text-decoration: none;
-}
-
-.left-img {
-  background: url('images/elemen/img\ login\ 2.png') no-repeat center center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  /* width: 100%; */
-}
-.w-75{
-  padding-right: 90px;
-  width: 75%!important;
-  /* padding-left: 60px; */
-}
-.btn-outline-dark{
-  border-radius: 30px !important;
-}
-.btn-dark{
-  border-radius: 30px !important;
-}
-.min-vh-100{
-  font-family: 'Poppins', sans-serif !important;
-}
 /* ===section5=== */
 .fw-bolder{
     margin-top: 40px;
@@ -287,7 +399,7 @@ html {
   .slider-track {
     display: flex;
     gap: 30px;
-    animation: slide 20s linear infinite;
+    animation: slide 30s linear infinite;
   }
   .testimonial-card, .review-card {
     background-color: #9B8BE3;
@@ -306,6 +418,62 @@ html {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
+
+/* serach bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #000; */
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  box-shadow: 12px 11px 19.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-container input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  background-color: #c4e1e3;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button svg {
+  width: 16px;
+  height: 16px;
+  fill: #333;
+}
+
+
 
 /* =====romance======= */
 .bg-light{
@@ -385,7 +553,7 @@ html {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 300 !important;
 }
-/* ==fiksi */
+/* ==fiksi========= */
 .bg-light{
   height: 100vh;
   margin: 0;
@@ -395,4 +563,771 @@ html {
     #FAC67A 32%,
     #DA498D 82%
   );
+}
+
+/* CONTACT US */
+.body-contact {
+  background: linear-gradient(
+  to bottom,
+  #FF90BB 0%,
+  #FFC1DA 32%,
+  #F8F8E1 82%
+  );
+}
+
+.contact-section {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+.form-box, .output-box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 5px 8px 23.2px 0px rgba(0, 0, 0, 0.25);
+  /* min-height: 300px; */
+  width: 400px;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.btn-custom {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 8px 23.2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-custom:hover {
+  background-color: #cfcfcf;
+}
+
+/* modal img */
+.img-fluid{
+  max-width: 100%;
+  height: 300px;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+/* ===SEE MORE=== */
+.bookslider-card.seemore{
+  background: #FFEBEB !important;
+}
+
+/*====LOGIN==== */
+.p-1.login{
+  padding: 0px !important;
+}
+a i{
+  border-style: none;
+  color: black;
+
+}
+.login-icon{
+  color: black;
+  width: 30px;
+  padding-top: 5px;
+}
+.lgn-body {
+  background: linear-gradient(to bottom, #8F87F1, #C68EFD, #FED2E2, #E9A5F1);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lgn-container {
+  width: 100%;
+  max-width: 700px;
+  /* margin-top: 20px; */
+}
+
+.lgn-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 25px 21px 28.7px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lgn-card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* .lgn-logo { 
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}*/
+.lgn-logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+.lgn-tagline {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.lgn-card-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lgn-left-column, .lgn-right-column {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.lgn-left-column {
+  border-right: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .lgn-left-column {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .lgn-card-content {
+    flex-direction: column;
+  }
+}
+
+.lgn-section-title {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lgn-social-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.lgn-social-button:hover {
+  background-color: #f9fafb;
+}
+
+.lgn-social-icon {
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.lgn-tos-text {
+  font-size: 12px;
+  color: #666;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.lgn-tos-text a {
+  color: #333;
+  text-decoration: none;
+}
+
+.lgn-tos-text a:hover {
+  text-decoration: underline;
+}
+
+.lgn-form-group {
+  margin-bottom: 15px;
+}
+
+.lgn-form-label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.lgn-form-control {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.lgn-password-group {
+  position: relative;
+}
+
+.lgn-password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.lgn-forgot-password {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+.lgn-forgot-password:hover {
+  text-decoration: underline;
+}
+
+.lgn-login-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background-color: #bbb;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.lgn-login-button:hover {
+  background-color: #aaa;
+}
+
+.lgn-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lgn-language-selector {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.lgn-language-selector:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  margin-left: 5px;
+}
+
+.lgn-footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.lgn-footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.lgn-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.lgn-copyright {
+  color: white;
+  font-size: 12px;
+}
+
+/* ========== RESPONSIVITAS ========== */
+
+/* Untuk Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  /* Header */
+  .fixed-top.d-flex {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Nav item spacing */
+  .nav-item {
+    margin-right: 5px;
+  }
+  
+  /* Hero Section */
+  .pr_kontainer {
+    padding: 30px;
+  }
+  
+  .pr_hero {
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+  
+  .pr_hero_konten {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .pr_hero_judul {
+    font-size: 1.8rem;
+  }
+  
+  .pr_hero_statistik {
+    justify-content: center;
+  }
+  
+  .pr_hero_sampul {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  /* Card Layout */
+  .container.text-center .row {
+    justify-content: center;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Kategori Section */
+  .custom-section {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  
+  .align-self-start img, .lowered img {
+    width: 230px !important;
+    height: 320px !important;
+  }
+  
+  /* Testimonial */
+  .testimonial-card {
+    width: 500px;
+  }
+  
+  .fw-bolder {
+    font-size: 35px !important;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+/* Untuk Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Header dan Nav */
+  .nav-pills {
+    display: none;
+  }
+  
+  /* Hero Section */
+  .pr_kontainer {
+    padding: 20px 15px;
+    margin-top: 70px;
+  }
+  
+  .pr_hero {
+    padding: 20px 15px;
+  }
+  
+  .pr_hero_judul {
+    font-size: 1.5rem;
+  }
+  
+  .pr_hero_deskripsi {
+    font-size: 0.9rem;
+  }
+  
+  .pr_hero_angka {
+    font-size: 1.5rem;
+  }
+  
+  .pr_hero_sampul {
+    max-width: 220px;
+  }
+  
+  /* Section Layout */
+  .container.text-center .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .col.text-start {
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
+  
+  .selling {
+    font-size: 25px !important;
+  }
+  
+  /* Kategori Section */
+  .custom-section .row .col {
+    margin-bottom: 60px;
+  }
+  
+  .align-self-start img, .lowered img {
+    width: 180px !important;
+    height: 260px !important;
+  }
+  
+  /* Testimonial */
+  .testimonial-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .testimonial-section {
+    height: auto;
+  }
+  
+  .quote {
+    font-size: 120px;
+    top: 60px;
+  }
+  
+  .profile img.user-img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .fw-bolder {
+    font-size: 28px !important;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  /* Footer */
+  footer .col {
+    margin-bottom: 20px;
+  }
+
+  /* Cards for novels */
+  .card {
+    width: 180px;
+    height: 320px;
+    margin: 0 auto 20px;
+  }
+
+  .card img {
+    width: 150px;
+    height: 230px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+}
+
+/* Untuk Small Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  /* Header */
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  
+  /* Hero Section */
+  .pr_hero_judul {
+    font-size: 1.3rem;
+  }
+  
+  .pr_hero_statistik {
+    flex-direction: column;
+  }
+  
+  .pr_hero_pembatas {
+    display: none;
+  }
+  
+  .pr_hero_stat {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .pr_hero_sampul {
+    max-width: 180px;
+  }
+  
+  /* Testimonial */
+  .testimonial-card {
+    padding: 15px;
+  }
+  
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile img.user-img {
+    position: static;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info {
+    margin-left: 0 !important;
+  }
+  
+  /* Card */
+  .card {
+    width: 160px;
+    height: 280px;
+  }
+  
+  .card img {
+    width: 130px;
+    height: 200px;
+    margin-left: 15px;
+  }
+  
+  /* Button */
+  #scrollTopBtn {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Tambahan untuk Carousel */
+@media (max-width: 992px) {
+  #carouselExampleIndicators {
+    margin-top: 60px;
+  }
+}
+
+/* Perbaikan tambahan untuk hamburger menu responsif */
+@media (max-width: 768px) {
+  .navbar .container-fluid {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Tambahkan toggle untuk menu mobile */
+  .navbar-toggle-btn {
+    display: block;
+    position: absolute;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+}
+
+/* Responsive CSS improvements for PustakaRasa website */
+
+/* Global responsive settings */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header/Navigation Responsiveness */
+@media (max-width: 992px) {
+  header .navbar-brand {
+    margin-right: 0;
+    font-size: 0.9rem;
+  }
+  
+  .search-container {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .nav-pills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  
+  .search-container {
+    margin: 10px 0;
+    width: 90%;
+    max-width: none;
+  }
+  
+  .nav-pills {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .login {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* Hero Section Responsiveness */
+.pr_hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pr_hero_konten {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.pr_hero_sampul {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .pr_hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .pr_hero_judul {
+    font-size: 1.8rem;
+  }
+  
+  .pr_hero_deskripsi {
+    font-size: 1rem;
+  }
+  
+  .pr_hero_statistik {
+    justify-content: center;
+  }
+}
+
+/* Fix the fixed height issue */
+.bg-light {
+  min-height: 100vh; /* Change from fixed height to min-height */
+  height: auto;
+}
+
+/* Book Slider Responsiveness */
+.bookslider-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  .bookslider-card {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .bookslider-author {
+    font-size: 0.75rem;
+  }
+  
+  .bookslider-title {
+    font-size: 0.9rem;
+  }
+}
+
+/* Modal Responsiveness */
+.modal-dialog {
+  max-width: 90%;
+  margin: 1.75rem auto;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 700px;
+  }
+}
+
+/* Footer Responsiveness */
+@media (max-width: 768px) {
+  footer.row {
+    text-align: center;
+  }
+  
+  footer .col {
+    margin-bottom: 20px;
+  }
+}
+
+/* Scroll Top Button Positioning */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  opacity: 0.7;
+}
+
+/* Adding missing styles for search container that were likely in style.css */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.search-button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button svg {
+  width: 20px;
+  height: 20px;
 }

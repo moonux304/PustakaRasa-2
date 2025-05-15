@@ -1,0 +1,78 @@
+/* =====romance======= */
+.bg-light{
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+      to right,
+      #FED2E2 0%,
+      #E9A5F1 32%,
+      #C68EFD 82%
+    );
+}
+.romance.mt-5 img{
+  margin-top: 60px;
+  height: 400px;
+  width: 1000px;
+  border-radius: 20px !important;
+}
+.bookslider-container {
+  overflow-x: hidden;
+  position: relative;
+  max-width: 100%;
+  margin-left: 135px;
+  margin-right: 135px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.bookslider-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollbook 10s linear infinite;
+  margin: 0;
+}
+.bookslider-container:hover .bookslider-track {
+  animation-play-state: paused;
+}
+.bookslider-card:hover {
+  transform: translateY(-8px);
+  /* box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); */
+}
+.bookslider-card {
+  flex-shrink: 0;
+  width: 200px;
+  background: white;
+  border-radius: 16px;
+  /* box-shadow: 20px 18px 31.2px 0px rgba(0, 0, 0, 0.25); */
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+}
+.bookslider-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.bookslider-title {
+  font-weight: bold;
+}
+.bookslider-author {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #666;
+}
+@keyframes scrollbook {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+.modal.fade{
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300 !important;
+}
